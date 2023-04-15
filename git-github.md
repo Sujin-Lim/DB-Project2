@@ -45,7 +45,7 @@
 
 -SJ: 처음 커밋 시 자기가 사용한 브랜치명으로 사용.)
 
-*PULL REQUEST*
+*<PULL REQUEST>*
 
 - main 브랜치에 병합은 임의로 merge 명령어 사용을 하지 않고 Pull Request로 내용 확인 후 병합해야 합니다.
 
