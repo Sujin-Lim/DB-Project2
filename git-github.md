@@ -43,7 +43,7 @@
 
 -origin: git hub 저장소 이름 (ex: https://github.com/----) 을 origin으로 명명한 것. db에서 테이블명을 as로 별칭으로 바꾼 것 처럼...
 
--sj: 처음 커밋 시 자기가 사용한 브랜치명으로 사용.)
+-SJ: 처음 커밋 시 자기가 사용한 브랜치명으로 사용.)
 
 *PULL REQUEST*
 
