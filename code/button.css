@@ -1,3 +1,5 @@
+/* 모든 페이지 색깔은 범위 구분을 위해서 눈에 띄는 색으로 해뒀습니다 */
+
 /* 로그인 페이지 스타일 시작 */
 
 /* 헤더 들어갈 시 wrap부분 margin-top 줘야함 */
@@ -64,24 +66,40 @@
 
 /* 헤더 스타일 시작 */
 /* 헤더부분 구분을 위해 색깔 넣음. 완성시 색깔 바꿀 것 */
+.bt-body {
+  margin: 0;
+  padding: 0;
+}
+
 .bt-header {
-  background-color: rgb(190, 18, 18);
+  background-color: red;
   width: 100%;
   height: 70px;
   position: fixed;
   top: 0;
   display: flex;
   z-index: 5000;
-  padding-top: 10px;
 }
 
 .bt-menu {
   position: absolute;
   top: 20px;
-  right: 90%;
+  left: 1%;
 }
 
-.bt-hamburger {
+.bt-h {
+  display: none;
+}
+
+.bt-h + label {
+  display: block;
+  width: 50px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+input[class="bt-h"] + label span {
   display: block;
   position: absolute;
   width: 70%;
@@ -90,20 +108,59 @@
   background: #000;
 }
 
-/* 헤더 왼쪽 메뉴 */
-
-.bt-hidden-li {
-  float: none;
-  font-size: 16px;
-  font-weight: bold;
-  color: black;
-  list-style: none;
+.bt-h1 {
+  top: 0;
 }
 
-/* 헤더 검색 */
+.bt-h2 {
+  top: 50%;
+}
+
+.bt-h3 {
+  bottom: 0;
+}
+
+.bt-hidden-a {
+  float: none;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+/* 숨긴 메뉴 */
+.bt-hidden-menu {
+  height: 270px;
+  background-color: black;
+  display: none;
+  top: 70px;
+  position: fixed;
+  width: 300px;
+  height: 400px;
+  padding-top: 5px;
+  justify-content: center;
+  z-index: 9998;
+}
+
+/* 오른쪽 내정보 */
+.bt-myinfo {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 90%;
+}
+.bt-myinfo-btn {
+  color: black;
+  background-color: red;
+  border-style: none;
+  cursor: pointer;
+}
+
+/* 오른쪽 끝 검색 */
 .bt-search {
   position: absolute;
+  margin-top: 15px;
   margin-left: 95%;
+  cursor: pointer;
 }
 
 .bt-search-icon {
@@ -111,22 +168,10 @@
   width: 40px;
 }
 
-.bt-hidden-menu {
-  height: 270px;
-  background-color: rgb(255, 255, 255);
-  display: none;
-  top: 60px;
-  position: fixed;
-  width: 100vw;
-  padding-top: 5px;
-  justify-content: center;
-  z-index: 9998;
-}
-
 .bt-hidden-search {
   width: 100vw;
   height: 320px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(36, 91, 209);
   position: fixed;
   display: none;
   top: 60px;
