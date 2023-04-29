@@ -113,7 +113,7 @@ input[class="bt-h"] + label span {
 }
 
 .bt-h2 {
-  top: 50%;
+  top: 45%;
 }
 
 .bt-h3 {
@@ -209,4 +209,18 @@ input[class="bt-h"] + label span {
 .bt-search-tag {
   text-decoration: underline;
   color: red;
+}
+
+/* 헤더 끝 */
+
+/* 메인페이지 */
+.main-body {
+  margin: 0;
+}
+
+.m-wrap {
+  width: 1080px;
+  margin: 0 auto;
+  margin-top: 70px;
+  background: skyblue;
 }
