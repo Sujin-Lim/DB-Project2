@@ -1,0 +1,167 @@
+/* 로그인 페이지 스타일 시작 */
+
+/* 헤더 들어갈 시 wrap부분 margin-top 줘야함 */
+.li-wrap {
+  width: 100%;
+  margin-top: 0;
+}
+
+.li-container {
+  position: absolute;
+  left: 35%;
+  top: 15%;
+}
+
+.li-intro {
+  margin-left: 20px;
+  margin-bottom: 100px;
+}
+
+.li-input {
+  margin-top: 30px;
+}
+
+.li-email,
+.li-pw {
+  width: 500px;
+  height: 50px;
+  font-size: 20px;
+  background-color: #e7e4e4;
+  border-style: none;
+  margin-bottom: 20px;
+}
+
+.li-email::placeholder,
+.li-pw::placeholder {
+  color: #cecece;
+  padding-left: 50px;
+}
+
+.li-login {
+  width: 500px;
+  height: 50px;
+  margin-top: 20px;
+  background-color: #b1b1b1;
+  font-size: 20px;
+  border-style: none;
+  color: #ffffff;
+}
+
+.li-j {
+  margin-top: 10%;
+}
+
+.li-join {
+  border-style: none;
+  background-color: none;
+  color: black;
+  background-color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/* 로그인 페이지 스타일 끝 */
+
+/* 헤더 스타일 시작 */
+/* 헤더부분 구분을 위해 색깔 넣음. 완성시 색깔 바꿀 것 */
+.bt-header {
+  background-color: rgb(190, 18, 18);
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  z-index: 5000;
+  padding-top: 10px;
+}
+
+.bt-menu {
+  position: absolute;
+  top: 20px;
+  right: 90%;
+}
+
+.bt-hamburger {
+  display: block;
+  position: absolute;
+  width: 70%;
+  height: 5px;
+  border-radius: 30px;
+  background: #000;
+}
+
+/* 헤더 왼쪽 메뉴 */
+
+.bt-hidden-li {
+  float: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  list-style: none;
+}
+
+/* 헤더 검색 */
+.bt-search {
+  position: absolute;
+  margin-left: 95%;
+}
+
+.bt-search-icon {
+  position: absolute;
+  width: 40px;
+}
+
+.bt-hidden-menu {
+  height: 270px;
+  background-color: rgb(255, 255, 255);
+  display: none;
+  top: 60px;
+  position: fixed;
+  width: 100vw;
+  padding-top: 5px;
+  justify-content: center;
+  z-index: 9998;
+}
+
+.bt-hidden-search {
+  width: 100vw;
+  height: 320px;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  display: none;
+  top: 60px;
+  z-index: 5;
+  padding-top: 5px;
+  justify-content: center;
+}
+
+.bt-hidden-tag-wrap {
+  margin-top: 30px;
+  margin-left: 29%;
+}
+
+.bt-search-bar {
+  margin-left: 30%;
+  width: 700px;
+  height: 50px;
+  margin-top: 50px;
+  font-size: 30px;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 2px solid black;
+}
+
+.bt-search-bar:focus {
+  outline: none;
+}
+
+.bt-tag {
+  display: inline;
+  margin-left: 30px;
+}
+
+.bt-search-tag {
+  text-decoration: underline;
+  color: red;
+}
