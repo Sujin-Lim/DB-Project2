@@ -2,10 +2,7 @@
 
 # 자기가 코딩중이면 여기에 적어주세요...
 
-
-로그인페이지- sj뼈대는 잡아둠
-
-헤더- sj 작업중
+기본 틀 완성 세부 사항 나중에..
 
 
 # 작업하는 법 (필독)
@@ -20,6 +17,12 @@ git bash를 연 상태에서 (예시로 폴더명을 Button으로 만들었습�
     git clone https://github.com/Sujin-Lim/firstCollabor.git Button
 
 을 하면 pull까지 다 된 상태이므로 작업을 시작할 수 있습니다.
+
+git을 처음 깔았다면 아래 설정 해주세요
+
+    git config user.name "이름"
+    
+    git config user.email "이메일"
 
 레포지토리의 깔끔함을 위해서 코드 / 회의록 폴더를 따로 만들었습니다.
 
