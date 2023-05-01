@@ -10,31 +10,7 @@
   <link rel="stylesheet" href="button.css">
 
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-  <script>
 
-    window.onload = function () {
-      //숨겨진 메뉴
-      var count = 0;
-      $('.bt-menu').on('click', function () {
-        count += 1;
-        if (count % 2 == 1) {
-          $('.bt-hidden-menu').slideDown();
-        } else {
-          $('.bt-hidden-menu').slideUp();
-        }
-      });
-      // 숨겨진 검색창
-      var count = 0;
-      $('.bt-search-icon').on('click', function () {
-        count += 1;
-        if (count % 2 == 1) {
-          $('.bt-hidden-search').slideDown();
-        } else {
-          $('.bt-hidden-search').slideUp();
-        }
-      });
-    }
-  </script>
 </head>
 
 <body class="bt-body">
@@ -80,6 +56,49 @@
       <div class="bt-tag"><a class="bt-search-tag"> #검색어 추천 8</a></div>
     </div>
   </div>
+  <div class="bt-hidden-info">
+    <ul class="bt-hidden-info-list">
+      <li class="bt-hidden-info-li"><a class="bt-hidden-i" href="#">마이메뉴1</a></li>
+      <li class="bt-hidden-info-li"><a class="bt-hidden-i" href="#">마이메뉴1</a></li>
+      <li class="bt-hidden-info-li"><a class="bt-hidden-i" href="#">마이메뉴1</a></li>
+      <li class="bt-hidden-info-li"><a class="bt-hidden-i" href="#">마이메뉴1</a></li>
+    </ul>
+  </div>
+
+  </div>
+
+  <script>
+    var count = {
+      menu: 0,
+      search: 0,
+      info: 0
+    };
+    $('.bt-menu').on('click', function () {
+      count.menu += 1;
+      if (count.menu % 2 == 1) {
+        $('.bt-hidden-menu').slideDown();
+      } else {
+        $('.bt-hidden-menu').slideUp();
+      }
+    });
+    // 숨겨진 검색창
+    $('.bt-search-icon').on('click', function () {
+      count.search += 1;
+      if (count.search % 2 == 1) {
+        $('.bt-hidden-search').slideDown();
+      } else {
+        $('.bt-hidden-search').slideUp();
+      }
+    });
+    $('.bt-myinfo-btn').on('click', function () {
+      count.info += 1;
+      if (count.info % 2 == 1) {
+        $('.bt-hidden-info').slideDown();
+      } else {
+        $('.bt-hidden-info').slideUp();
+      }
+    });
+  </script>
 
 
 </body>

@@ -210,6 +210,36 @@ input[class="bt-h"] + label span {
   text-decoration: underline;
   color: red;
 }
+.bt-hidden-info-list {
+  padding-left: 10px;
+}
+
+.bt-hidden-info-li {
+  float: none;
+  font-size: 13px;
+  font-weight: bold;
+  list-style: none;
+}
+.bt-hidden-i {
+  color: orange;
+  text-decoration: none;
+}
+.bt-hidden-info {
+  top: 70px;
+  background-color: green;
+  display: none;
+  position: fixed;
+  width: 100px;
+  height: 120px;
+  padding-top: 5px;
+  z-index: 9998;
+  margin: 0;
+}
+
+.bt-hidden-info {
+  position: absolute;
+  margin-left: 90%;
+}
 
 /* 헤더 끝 */
 
