@@ -18,7 +18,7 @@
     <div class="bt-wrap">
       <div class="bt-menu">
         <div class="bt-hamburger">
-          <input class="bt-h" type="checkbox">
+          <input id="bt-h" type="checkbox">
           <label for="bt-h">
             <span class="bt-h1"></span>
             <span class="bt-h2"></span>
@@ -27,10 +27,10 @@
         </div>
       </div>
       <div class="bt-myinfo">
-        <input class="bt-myinfo-btn" type="button" value="내 정보"></input>
+        <input class="bt-myinfo-btn" type="button" value="내 정보">
       </div>
       <div class="bt-search">
-        <img class="bt-search-icon" src="img/search.png">
+        <img class="bt-search-icon" src="img/search.png" alt="검색">
       </div>
     </div>
   </div>
@@ -65,15 +65,13 @@
     </ul>
   </div>
 
-  </div>
-
   <script>
     var count = {
       menu: 0,
       search: 0,
       info: 0
     };
-    $('.bt-menu').on('click', function () {
+    $('#bt-h').on('click', function () {
       count.menu += 1;
       if (count.menu % 2 == 1) {
         $('.bt-hidden-menu').slideDown();
