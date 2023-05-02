@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="button.css">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <!-- 헤더 푸터 연결 -->
+  <script>
+    $(document).ready(function () {
+      $(".header").load("header.html");
+    });
+    $(document).ready(function () {
+      $(".footer").load("footer.html");
+    });
+  </script>
+</head>
+
+<body>
+  <div class="header"></div>
+  <div class="jo-wrap">
+    <div class="jo-content">
+      <form>
+        <table class="jo-table">
+          <tr>
+            <td>회원번호</td>
+            <td><input class="custno" type="number"></td>
+          </tr>
+          <tr>
+            <td>아이디</td>
+            <td><input class="custid" type="text"></td>
+          </tr>
+          <tr>
+            <td>비밀번호</td>
+            <td><input class="custpw" type="password"></td>
+          </tr>
+          <tr>
+            <td>이름</td>
+            <td><input class="custname" type="text"></td>
+          </tr>
+          <tr>
+            <td>전화번호</td>
+            <td><input class="phone" type="number"></td>
+          </tr>
+          <tr>
+            <td>주소</td>
+            <td><input class="address" type="text"></td>
+          </tr>
+          <tr>
+            <td><input class="join" type="button" value="회원가입"></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </div>
+  <div class="footer"></div>
+</body>
+
+</html>

@@ -255,9 +255,28 @@ input[id="bt-h"] + label span {
 }
 /* 푸터 끝 */
 
+/* 회원가입 */
+.jo-wrap {
+  margin: 0;
+  padding: 0;
+}
+.jo-content {
+  width: 1080px;
+  height: 800px;
+  margin: 0 auto;
+  background: orange;
+  margin-top: 70px;
+  padding-left: 200px;
+  padding-top: 100px;
+}
+.jo-table {
+  margin-left: 10%;
+}
+
 /* 메인페이지 */
 .main-body {
   margin: 0;
+  padding: 0;
 }
 
 .m-wrap {
