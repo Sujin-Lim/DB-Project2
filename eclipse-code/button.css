@@ -1,9 +1,9 @@
-@charset "UTF-8";
-/* ëª¨ë“  í˜ì´ì§€ ìƒ‰ê¹”ì€ ë²”ìœ„ êµ¬ë¶„ì„ ìœ„í•´ì„œ ëˆˆì— ë„ëŠ” ìƒ‰ìœ¼ë¡œ í•´ë’€ìŠµë‹ˆë‹¤ */
+@charset "EUC-KR";
+/* ¸ğµç ÆäÀÌÁö »ö±òÀº ¹üÀ§ ±¸ºĞÀ» À§ÇØ¼­ ´«¿¡ ¶ç´Â »öÀ¸·Î ÇØµ×½À´Ï´Ù */
 
-/* ë¡œê·¸ì¸ í˜ì´ì§€ ìŠ¤íƒ€ì¼ ì‹œì‘ */
+/* ·Î±×ÀÎ ÆäÀÌÁö ½ºÅ¸ÀÏ ½ÃÀÛ */
 
-/* í—¤ë” ë“¤ì–´ê°ˆ ì‹œ wrapë¶€ë¶„ margin-top ì¤˜ì•¼í•¨ */
+/* Çì´õ µé¾î°¥ ½Ã wrapºÎºĞ margin-top Áà¾ßÇÔ */
 .li-wrap {
   width: 100%;
   margin-top: 0;
@@ -24,7 +24,7 @@
   margin-top: 30px;
 }
 
-.li-email,
+.li-id,
 .li-pw {
   width: 500px;
   height: 50px;
@@ -34,7 +34,7 @@
   margin-bottom: 20px;
 }
 
-.li-email::placeholder,
+.li-id::placeholder,
 .li-pw::placeholder {
   color: #cecece;
   padding-left: 50px;
@@ -48,6 +48,7 @@
   font-size: 20px;
   border-style: none;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .li-j {
@@ -63,10 +64,10 @@
   font-size: 15px;
 }
 
-/* ë¡œê·¸ì¸ í˜ì´ì§€ ìŠ¤íƒ€ì¼ ë */
+/* ·Î±×ÀÎ ÆäÀÌÁö ½ºÅ¸ÀÏ ³¡ */
 
-/* í—¤ë” ìŠ¤íƒ€ì¼ ì‹œì‘ */
-/* í—¤ë”ë¶€ë¶„ êµ¬ë¶„ì„ ìœ„í•´ ìƒ‰ê¹” ë„£ìŒ. ì™„ì„±ì‹œ ìƒ‰ê¹” ë°”ê¿€ ê²ƒ */
+/* Çì´õ ½ºÅ¸ÀÏ ½ÃÀÛ */
+/* Çì´õºÎºĞ ±¸ºĞÀ» À§ÇØ »ö±ò ³ÖÀ½. ¿Ï¼º½Ã »ö±ò ¹Ù²Ü °Í */
 .bt-body {
   margin: 0;
   padding: 0;
@@ -129,7 +130,7 @@ input[id="bt-h"] + label span {
   list-style: none;
   color: white;
 }
-/* ìˆ¨ê¸´ ë©”ë‰´ */
+/* ¼û±ä ¸Ş´º */
 .bt-hidden-menu {
   height: 270px;
   background-color: black;
@@ -143,7 +144,7 @@ input[id="bt-h"] + label span {
   z-index: 9998;
 }
 
-/* ì˜¤ë¥¸ìª½ ë‚´ì •ë³´ */
+/* ¿À¸¥ÂÊ ³»Á¤º¸ */
 .bt-myinfo {
   position: absolute;
   margin-top: 20px;
@@ -156,7 +157,7 @@ input[id="bt-h"] + label span {
   cursor: pointer;
 }
 
-/* ì˜¤ë¥¸ìª½ ë ê²€ìƒ‰ */
+/* ¿À¸¥ÂÊ ³¡ °Ë»ö */
 .bt-search {
   position: absolute;
   margin-top: 15px;
@@ -242,9 +243,9 @@ input[id="bt-h"] + label span {
   margin-left: 90%;
 }
 
-/* í—¤ë” ë */
+/* Çì´õ ³¡ */
 
-/* í‘¸í„° ì‹œì‘ */
+/* ÇªÅÍ ½ÃÀÛ */
 .ft-wrap {
   width: 100%;
   height: 80px;
@@ -254,10 +255,10 @@ input[id="bt-h"] + label span {
   text-align: center;
   padding-bottom: 10px;
 }
-/* í‘¸í„° ë */
+/* ÇªÅÍ ³¡ */
 
-/* íšŒì›ê°€ì… */
-.join-body {
+/* È¸¿ø°¡ÀÔ */
+.jo-wrap {
   margin: 0;
   padding: 0;
 }
@@ -274,7 +275,7 @@ input[id="bt-h"] + label span {
   margin-left: 10%;
 }
 
-/* ë©”ì¸í˜ì´ì§€ */
+/* ¸ŞÀÎÆäÀÌÁö */
 .main-body {
   margin: 0;
   padding: 0;
@@ -287,4 +288,4 @@ input[id="bt-h"] + label span {
   background: skyblue;
 }
 
-/* ë©”ì¸ ë */
+/* ¸ŞÀÎ ³¡ */

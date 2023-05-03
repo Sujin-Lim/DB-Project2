@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>  
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,41 +29,41 @@
         </div>
       </div>
       <div class="bt-myinfo">
-        <input class="bt-myinfo-btn" type="button" value="내 정보">
+        <input class="bt-myinfo-btn" type="button" value="�� ����">
       </div>
       <div class="bt-search">
-        <img class="bt-search-icon" src="img/search.png" alt="검색">
+        <img class="bt-search-icon" src="search.png" alt="�˻�">
       </div>
     </div>
   </div>
   <div class="bt-hidden-menu">
     <ul class="bt-hidden">
-      <li class="bt-hidden-li"><a class="bt-hidden-a" href="#">메뉴1</a></li>
-      <li class="bt-hidden-li"><a class="bt-hidden-a" href="#">메뉴1</a></li>
-      <li class="bt-hidden-li"><a class="bt-hidden-a" href="#">메뉴1</a></li>
-      <li class="bt-hidden-li"><a class="bt-hidden-a" href="#">메뉴1</a></li>
+      <li class="bt-hidden-li"><a class="bt-hidden-a" href="#">�޴�1</a></li>
+      <li class="bt-hidden-li"><a class="bt-hidden-a" href="#">�޴�1</a></li>
+      <li class="bt-hidden-li"><a class="bt-hidden-a" href="#">�޴�1</a></li>
+      <li class="bt-hidden-li"><a class="bt-hidden-a" href="#">�޴�1</a></li>
     </ul>
   </div>
   <div class="bt-hidden-search">
-    <input class="bt-search-bar" type="text" placeholder="검색어 입력"><br>
+    <input class="bt-search-bar" type="text" placeholder="�˻��� �Է�"><br>
     <div class="bt-hidden-tag-wrap">
-      <div class="bt-tag"><a class="bt-search-tag"> #검색어 추천 1</a></div>
-      <div class="bt-tag"><a class="bt-search-tag"> #검색어 추천 2</a></div>
-      <div class="bt-tag"><a class="bt-search-tag"> #검색어 추천 3</a></div>
-      <div class="bt-tag"><a class="bt-search-tag"> #검색어 추천 4</a></div>
-      <div class="bt-tag"><a class="bt-search-tag"> #검색어 추천 5</a></div>
+      <div class="bt-tag"><a class="bt-search-tag"> #�˻��� ��õ 1</a></div>
+      <div class="bt-tag"><a class="bt-search-tag"> #�˻��� ��õ 2</a></div>
+      <div class="bt-tag"><a class="bt-search-tag"> #�˻��� ��õ 3</a></div>
+      <div class="bt-tag"><a class="bt-search-tag"> #�˻��� ��õ 4</a></div>
+      <div class="bt-tag"><a class="bt-search-tag"> #�˻��� ��õ 5</a></div>
       <br>
-      <div class="bt-tag"><a class="bt-search-tag"> #검색어 추천 6</a></div>
-      <div class="bt-tag"><a class="bt-search-tag"> #검색어 추천 7</a></div>
-      <div class="bt-tag"><a class="bt-search-tag"> #검색어 추천 8</a></div>
+      <div class="bt-tag"><a class="bt-search-tag"> #�˻��� ��õ 6</a></div>
+      <div class="bt-tag"><a class="bt-search-tag"> #�˻��� ��õ 7</a></div>
+      <div class="bt-tag"><a class="bt-search-tag"> #�˻��� ��õ 8</a></div>
     </div>
   </div>
   <div class="bt-hidden-info">
     <ul class="bt-hidden-info-list">
-      <li class="bt-hidden-info-li"><a class="bt-hidden-i" href="#">마이메뉴1</a></li>
-      <li class="bt-hidden-info-li"><a class="bt-hidden-i" href="#">마이메뉴1</a></li>
-      <li class="bt-hidden-info-li"><a class="bt-hidden-i" href="#">마이메뉴1</a></li>
-      <li class="bt-hidden-info-li"><a class="bt-hidden-i" href="#">마이메뉴1</a></li>
+      <li class="bt-hidden-info-li"><a class="bt-hidden-i" href="#">���̸޴�1</a></li>
+      <li class="bt-hidden-info-li"><a class="bt-hidden-i" href="#">���̸޴�1</a></li>
+      <li class="bt-hidden-info-li"><a class="bt-hidden-i" href="#">���̸޴�1</a></li>
+      <li class="bt-hidden-info-li"><a class="bt-hidden-i" href="#">���̸޴�1</a></li>
     </ul>
   </div>
 
@@ -81,7 +81,7 @@
         $('.bt-hidden-menu').slideUp();
       }
     });
-    // 숨겨진 검색창
+    // ������ �˻�â
     $('.bt-search-icon').on('click', function () {
       count.search += 1;
       if (count.search % 2 == 1) {

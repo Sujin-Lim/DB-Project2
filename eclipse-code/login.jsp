@@ -1,5 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>  
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+
+<!-- 
+      2023/04/28  
+      Coding by Button (SJ,SY,EJ,HJ,JY)
+-->
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -15,24 +21,24 @@
   <div class="li-wrap">
     <div class="li-container">
       <div class="li-intro">
-        <h2>이메일 주소로 로그인 하세요</h2>
-        <b>로그인하여 취미생활을 즐겨보세요!</b>
+        <h2> �Ѥѷα��� �ϼ���</h2>
+        <b>�α����Ͽ� ��̻�Ȱ�� ��ܺ�����!</b>
       </div>
-      <form>
+      <form action="loginCheck.jsp" method="post">
         <table class="li-input">
           <tr>
-            <td><input class="li-email" type="email" placeholder="이메일"></td>
+            <td><input class="li-id" name="custid" type="text" placeholder="���̵�"></td>
           </tr>
           <tr>
-            <td><input class="li-pw" type="password" placeholder="비밀번호"></td>
+            <td><input class="li-pw" name="custpw" type="password" placeholder="��й�ȣ"></td>
           </tr>
           <tr>
-            <td><input class="li-login" type="submit" value="로그인"></td>
+            <td><input class="li-login" type="submit" value="�α���"></td>
           </tr>
         </table>
         <div class="li-j">
-          <span>@@@에 처음이신가요?</span>
-          <input class="li-join" type="submit" value="가입하기">
+          <span>@@@�� ó���̽Ű���?</span>
+          <input class="li-join" type="button" value="�����ϱ�" onclick="location.href='join.jsp'">
         </div>
       </form>
     </div>
