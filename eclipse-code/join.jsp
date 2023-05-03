@@ -1,3 +1,5 @@
+
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>    
     
@@ -22,13 +24,14 @@
       $(".footer").load("footer.jsp");
     });
   </script>
+  
 </head>
 
 <body class="join-body">
   <div class="header"></div>
   <div class="jo-wrap">
     <div class="jo-content">
-      <form name="frm">
+    <form name="frm" action="insertmember.jsp" method="post">
         <table class="jo-table">
           <tr>
             <td>아이디</td>
