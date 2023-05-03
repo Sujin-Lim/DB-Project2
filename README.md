@@ -113,6 +113,13 @@ vscode 맨 왼쪽 아래를 보시면 메인 브랜치가 선택되어 있는 �
 
 ## 개발 기간별 현황
 
+230428 Day1. 주제정하기, 홈페이지 틀 잡기, DB 연동방법 논의
+
+230502 Day2. 주제 좁혀서 정하기, 회원가입: SJ, JY , 문화행사: SY, YJ, HJ, 서울시 공공데이터 활용 경진대회 참가 논의
+
+230503 Day3. oracle DB를 화면에 나타나도록 구현. 회원가입 페이지 작동. 로그인 페이지 작동확인.
+
+
 ## 프로젝트에 사용한 개발 도구
 <div>
 <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
