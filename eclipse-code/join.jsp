@@ -1,5 +1,12 @@
 
 
+<%-- 회원가입 페이지 입니다. 
+	이 페이지에서 입력받은 내용을 insertmember.jsp로 넘겨 
+	Oracle DB와 연결합니다. 
+	DB로 넘기기 전, 회원가입 버튼을 눌렀을 때 
+	각각의 항목마다 joincheck.js에서 만들어진 joincheck() 함수로 정규식 검사를 해 알맞은 값이 들어갔는지 확인합니다.--%>
+
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>    
     
@@ -12,8 +19,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="button.css">
+  
   <script type="text/javascript" src="joincheck.js"></script>
-
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <!-- 헤더 푸터 연결 -->
   <script>

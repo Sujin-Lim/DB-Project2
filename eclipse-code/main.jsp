@@ -1,5 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+
+<%-- 메인 페이지 입니다. 검색창에서 검색어를 입력해 search.jsp로 넘깁니다.
+	 개짜증난다 input type="text"에 placeholder값 지우니 됐다 어이없다 진짜 챗지피티 죽여버려 --%>
+
+
+<%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +16,7 @@
   <link rel="stylesheet" href="button.css">
 
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-  <!-- ��� Ǫ�� ���� -->
+  <!-- 헤더 푸터 연결 -->
   <script>
     $(document).ready(function () {
       $(".header").load("header.jsp");
@@ -27,14 +31,10 @@
 <body class="main-body">
   <div class="header"></div>
   <div class="m-wrap">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non luctus odio, eget ultrices velit. Donec
-      porttitor,
-      nulla nec sodales consectetur, ligula ipsum cursus lorem, ac aliquet purus sem vel mi. Nunc vestibulum nulla at
-      ultrices
-      laoreet. Aliquam molestie urna risus, a pharetra purus imperdiet eu. Ut tempus elit ligula, eget interdum ipsum
-      dictum
-      in. Nullam a lacus at nibh ornare porttitor. Aliquam vitae justo semper, dictum tellus vitae, hendrerit ex. Nullam
-      congue tristique consectetur. Praesent non vehicula neque, at vestibulum risus..</p>
+  <form action="search.jsp" method="get">
+  	<input type="text" name="query" style="width:300px; height:100px;">
+  	<input type="submit" value="검색" style="width:50px; height:50px;">
+  </form>
   </div>
   <div class="footer"></div>
 

@@ -1,6 +1,8 @@
-<% //join.jsp의 form에서 전달받은 데이터를 데이터베이스(insertmember table)에 저장하는 기능 구현 %>
 
-<% // java.sql 패키지에 속하는 클래스들을 import 해 DB에 연결하고 데이터를 조회,수정,삭제 할 수 있는 클래스들을 사용할 수 있게 함 %>
+
+<%--회원가입 창 join.jsp의 form에서 전달받은 데이터를 데이터베이스(member table)에 저장하는 기능 구현 --%>
+<%-- java.sql 패키지에 속하는 클래스들을 import 해 DB에 연결하고 데이터를 조회,수정,삭제 할 수 있는 클래스들을 사용할 수 있게 함 --%>
+
 <%@page import="java.sql.*" %>
 <%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
     

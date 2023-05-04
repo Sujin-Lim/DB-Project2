@@ -1,3 +1,9 @@
+
+
+<%-- login창에서 받은 아이디와 비밀번호를 member테이블에 입력된 값과 비교해 로그인을 합니다.
+	 로그인에 성공할 경우 main.jsp 페이지로 이동하게 되며, 실패시 다시 로그인 창으로 돌아갑니다. --%>
+
+
 <%@ page import="java.sql.*"%>
 <%@ page import="javax.servlet.http.*,java.io.*,java.util.*"%>
 <%@ page contentType="text/html; charset=UTF-8" language="java"%>
