@@ -1,0 +1,41 @@
+[cmd]
+sqlplus
+system
+1234
+create user Button identified by 1234;
+grant connect, resource, dba to Button;
+commit;
+
+[sql developer]
+새 접속 생성
+Name: Button
+사용자 이름: Button
+비밀번호: 1234
+
+create table member (
+custid varchar2(10) primary key,
+custpw varchar2(10),
+custname varchar2(10),
+custphone number(10),
+custadd varchar2(30));
+
+create table performance (
+분류 VARCHAR2(20),
+자치구 VARCHAR2(20),
+공연행사명 VARCHAR2(300),
+날짜 VARCHAR2(50),
+장소 VARCHAR2(500),
+기관명 VARCHAR2(150),
+이용대상 VARCHAR2(300),
+이용요금 VARCHAR2(800),
+출연자정보 VARCHAR2(2000),
+프로그램소개 VARCHAR2(1500),
+기타내용 VARCHAR2(2000),
+홈페이지주소 VARCHAR2(1500),
+대표이미지 VARCHAR2(200),
+신청일 DATE,
+"시민/기관" VARCHAR2(20),
+시작일 DATE,
+종료일 DATE,
+테마분류 VARCHAR2(50)
+);
