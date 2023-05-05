@@ -285,7 +285,51 @@ input[id="bt-h"] + label span {
   width: 1080px;
   margin: 0 auto;
   margin-top: 70px;
-  background: skyblue;
+  margin-bottom: 100px;
+}
+
+.m-search-wr {
+  margin-left: 300px;
+  margin-top: 200px;
+}
+
+.m-search-bar {
+  width: 500px;
+  height: 50px;
+  font-size: 30px;
+}
+
+.m-search-bt {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: skyblue;
+  font-size: 20px;
+}
+
+.m-content {
+	width: 1080px;
+	margin-top: 50px;
+}
+
+.m-content-t {
+	width: 100%;
+	border-spacing: 40px;
+}
+
+
+.m-content-t img {
+	width: 300px;
+}
+.m-content-t td {
+	text-align: center;
+	width: 33.33%;
+}
+
+.m-content-t td a {
+	text-decoration: none;
+	color: black;
+	font-size: 15px;
 }
 
 /* ∏ﬁ¿Œ ≥° */
