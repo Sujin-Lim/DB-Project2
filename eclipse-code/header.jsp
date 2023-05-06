@@ -44,7 +44,9 @@
     </ul>
   </div>
   <div class="bt-hidden-search">
-    <input class="bt-search-bar" type="text" placeholder="검색어 입력"><br>
+  <form action="search.jsp" method="get">
+    <input class="bt-search-bar" type="text" name="query"><br>
+    </form>
     <div class="bt-hidden-tag-wrap">
       <div class="bt-tag"><a class="bt-search-tag"> #검색어 추천 1</a></div>
       <div class="bt-tag"><a class="bt-search-tag"> #검색어 추천 2</a></div>
@@ -59,8 +61,8 @@
   </div>
   <div class="bt-hidden-info">
     <ul class="bt-hidden-info-list">
-      <li class="bt-hidden-info-li"><a class="bt-hidden-i" href="#">마이메뉴1</a></li>
-      <li class="bt-hidden-info-li"><a class="bt-hidden-i" href="#">마이메뉴1</a></li>
+      <li class="bt-hidden-info-li"><a class="bt-hidden-i" href="myinfo.jsp">내 정보 수정</a></li>
+      <li class="bt-hidden-info-li"><a class="bt-hidden-i" href="logout.jsp">로그아웃</a></li>
       <li class="bt-hidden-info-li"><a class="bt-hidden-i" href="#">마이메뉴1</a></li>
       <li class="bt-hidden-info-li"><a class="bt-hidden-i" href="#">마이메뉴1</a></li>
     </ul>

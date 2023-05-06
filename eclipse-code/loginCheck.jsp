@@ -30,7 +30,7 @@
         if (rs.next()) {
             int cnt = rs.getInt("cnt");
             if (cnt > 0) {
-                // 로그인 성공
+                // 로그인 성공 HttpSession을 사용해 로그인 정보를 저장함
                 HttpSession loginSession = request.getSession();
                 loginSession.setAttribute("loginUser", custid);
                 response.sendRedirect("newmain.jsp");
