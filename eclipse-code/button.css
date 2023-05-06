@@ -1,9 +1,9 @@
-@charset "EUC-KR";
-/* ¸ğµç ÆäÀÌÁö »ö±òÀº ¹üÀ§ ±¸ºĞÀ» À§ÇØ¼­ ´«¿¡ ¶ç´Â »öÀ¸·Î ÇØµ×½À´Ï´Ù */
 
-/* ·Î±×ÀÎ ÆäÀÌÁö ½ºÅ¸ÀÏ ½ÃÀÛ */
+/* ëª¨ë“  í˜ì´ì§€ ìƒ‰ê¹”ì€ ë²”ìœ„ êµ¬ë¶„ì„ ìœ„í•´ì„œ ëˆˆì— ë„ëŠ” ìƒ‰ìœ¼ë¡œ í•´ë’€ìŠµë‹ˆë‹¤ */
 
-/* Çì´õ µé¾î°¥ ½Ã wrapºÎºĞ margin-top Áà¾ßÇÔ */
+/* ë¡œê·¸ì¸ í˜ì´ì§€ ìŠ¤íƒ€ì¼ ì‹œì‘ */
+
+/* í—¤ë” ë“¤ì–´ê°ˆ ì‹œ wrapë¶€ë¶„ margin-top ì¤˜ì•¼í•¨ */
 .li-wrap {
   width: 100%;
   margin-top: 0;
@@ -64,10 +64,10 @@
   font-size: 15px;
 }
 
-/* ·Î±×ÀÎ ÆäÀÌÁö ½ºÅ¸ÀÏ ³¡ */
+/* ë¡œê·¸ì¸ í˜ì´ì§€ ìŠ¤íƒ€ì¼ ë */
 
-/* Çì´õ ½ºÅ¸ÀÏ ½ÃÀÛ */
-/* Çì´õºÎºĞ ±¸ºĞÀ» À§ÇØ »ö±ò ³ÖÀ½. ¿Ï¼º½Ã »ö±ò ¹Ù²Ü °Í */
+/* í—¤ë” ìŠ¤íƒ€ì¼ ì‹œì‘ */
+/* í—¤ë”ë¶€ë¶„ êµ¬ë¶„ì„ ìœ„í•´ ìƒ‰ê¹” ë„£ìŒ. ì™„ì„±ì‹œ ìƒ‰ê¹” ë°”ê¿€ ê²ƒ */
 .bt-body {
   margin: 0;
   padding: 0;
@@ -130,7 +130,7 @@ input[id="bt-h"] + label span {
   list-style: none;
   color: white;
 }
-/* ¼û±ä ¸Ş´º */
+/* ìˆ¨ê¸´ ë©”ë‰´ */
 .bt-hidden-menu {
   height: 270px;
   background-color: black;
@@ -144,7 +144,7 @@ input[id="bt-h"] + label span {
   z-index: 9998;
 }
 
-/* ¿À¸¥ÂÊ ³»Á¤º¸ */
+/* ì˜¤ë¥¸ìª½ ë‚´ì •ë³´ */
 .bt-myinfo {
   position: absolute;
   margin-top: 20px;
@@ -157,7 +157,7 @@ input[id="bt-h"] + label span {
   cursor: pointer;
 }
 
-/* ¿À¸¥ÂÊ ³¡ °Ë»ö */
+/* ì˜¤ë¥¸ìª½ ë ê²€ìƒ‰ */
 .bt-search {
   position: absolute;
   margin-top: 15px;
@@ -243,21 +243,21 @@ input[id="bt-h"] + label span {
   margin-left: 90%;
 }
 
-/* Çì´õ ³¡ */
+/* í—¤ë” ë */
 
-/* ÇªÅÍ ½ÃÀÛ */
+/* í‘¸í„° ì‹œì‘ */
 .ft-wrap {
   width: 100%;
   height: 80px;
   background-color: yellow;
-  position: fixed;
-  bottom: 0;
+  position: absolute;
+  bottom: auto;
   text-align: center;
   padding-bottom: 10px;
 }
-/* ÇªÅÍ ³¡ */
+/* í‘¸í„° ë */
 
-/* È¸¿ø°¡ÀÔ */
+/* íšŒì›ê°€ì… */
 .jo-wrap {
   margin: 0;
   padding: 0;
@@ -275,7 +275,7 @@ input[id="bt-h"] + label span {
   margin-left: 10%;
 }
 
-/* ¸ŞÀÎÆäÀÌÁö */
+/* ë©”ì¸í˜ì´ì§€ */
 .main-body {
   margin: 0;
   padding: 0;
@@ -289,8 +289,8 @@ input[id="bt-h"] + label span {
 }
 
 .m-search-wr {
-  margin-left: 300px;
   margin-top: 200px;
+  margin-left: 270px;
 }
 
 .m-search-bar {
@@ -332,4 +332,21 @@ input[id="bt-h"] + label span {
 	font-size: 15px;
 }
 
-/* ¸ŞÀÎ ³¡ */
+/* ë©”ì¸ ë */
+
+/* ìƒˆ ë©”ì¸ */
+
+.m-sub {
+	margin-top: 10px;
+}
+.m-sub-t img {
+	width: 150px;
+}
+.m-sub-t {
+	width: 100%;
+	border-spacing: 100px;
+}
+.m-sub-t td {
+	text-align: center;
+	width: 33.33%;
+}

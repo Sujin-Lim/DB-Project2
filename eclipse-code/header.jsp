@@ -31,7 +31,7 @@
         <input class="bt-myinfo-btn" type="button" value="내 정보">
       </div>
       <div class="bt-search">
-        <img class="bt-search-icon" src="search.png" alt="검색">
+        <img class="bt-search-icon" src="img/search.png" alt="검색">
       </div>
     </div>
   </div>

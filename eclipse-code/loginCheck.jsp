@@ -33,7 +33,7 @@
                 // 로그인 성공
                 HttpSession loginSession = request.getSession();
                 loginSession.setAttribute("loginUser", custid);
-                response.sendRedirect("main.jsp");
+                response.sendRedirect("newmain.jsp");
             } else {
                 // 로그인 실패
                 out.println("<script>");
