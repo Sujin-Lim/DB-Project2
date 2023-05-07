@@ -41,7 +41,7 @@
           <div class="m-content">
           <table class="m-content-t">
           <tr>
-          <td> M 아티스트 2023 김도현 피아노 리사이틀 II</a></td>
+          <td> M 아티스트 2023 김도현 피아노 리사이틀 II</td>
           <td><a href="http://www.gdfac.or.kr/web/lay2/program/S1T204C211/show/view.do?show_seq=1925&cpage=2&rows=10&keyword=&place=&start_dt=&end_dt=">Dear Next Generation, 유다빈밴드(YUDABINBAND)</a></td>
           <td><a href="http://www.gdfac.or.kr/web/lay2/program/S1T204C211/show/view.do?show_seq=1924&cpage=1&rows=10&keyword=&place=&start_dt=&end_dt=">Dear Next Generation, 라쿠나(LACUNA)</a></td>
           </tr>

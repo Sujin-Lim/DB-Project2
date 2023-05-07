@@ -33,7 +33,7 @@
                 // 로그인 성공 HttpSession을 사용해 로그인 정보를 저장함
                 HttpSession loginSession = request.getSession();
                 loginSession.setAttribute("loginUser", custid);
-                response.sendRedirect("newmain.jsp");
+                response.sendRedirect("main.jsp");
             } else {
                 // 로그인 실패
                 out.println("<script>");
