@@ -39,3 +39,71 @@ create table performance (
 종료일 DATE,
 테마분류 VARCHAR2(50)
 );
+
+create table trek_hangang(
+자치구 varchar2(100),
+코스레벨 varchar2(10),
+코스대분류 varchar2(50),
+코스명 varchar2(500),
+상세코스 varchar2(500),
+설명 varchar2(1500),
+거리 varchar2(30),
+소요시간 varchar2(50),
+교통편 varchar2(800),
+연계지하철역 varchar2(50),
+연계코스 varchar2(30),
+관련파일 varchar2(500));
+
+create table trek_dulle(
+자치구 varchar2(100),
+코스레벨 varchar2(10),
+코스대분류 varchar2(50),
+코스명 varchar2(500),
+상세코스 varchar2(500),
+설명 varchar2(4000),
+거리 varchar2(30),
+소요시간 varchar2(50),
+교통편 varchar2(800),
+연계지하철역 varchar2(50),
+연계코스 varchar2(30),
+관련파일 varchar2(500));
+
+create table trek_eco(
+순번 number primary key,
+자치구 varchar2(100),
+거리 varchar2(30),
+소요시간 varchar2(50),
+연계지하철 varchar2(50),
+교통편 varchar2(800),
+상세코스 varchar2(500),
+설명 varchar2(4000),
+코스명 varchar2(500),
+코스대분류 varchar2(50),
+강남강북구분 varchar2(10),
+코스레벨 varchar2(10)
+);
+create table trek_eco(
+자치구 varchar2(100),
+코스레벨 varchar2(10),
+코스대분류 varchar2(50),
+코스명 varchar2(500),
+상세코스 varchar2(500),
+설명 varchar2(4000),
+거리 varchar2(30),
+소요시간 varchar2(50),
+교통편 varchar2(800),
+연계지하철역 varchar2(50),
+연계코스 varchar2(30),
+관련파일 varchar2(500));
+
+CREATE VIEW trek as
+SELECT 자치구, 코스레벨, 코스대분류, 코스명, 상세코스, 설명, 거리, 소요시간, 교통편, 연계지하철역, 연계코스, 관련파일
+FROM trek_hangang
+UNION ALL
+SELECT 자치구, 코스레벨, 코스대분류, 코스명, 상세코스, 설명, 거리, 소요시간, 교통편, 연계지하철역, 연계코스, 관련파일
+FROM trek_dulle
+UNION ALL
+SELECT 자치구, 코스레벨, 코스대분류, 코스명, 상세코스, 설명, 거리, 소요시간, 교통편, 연계지하철역, 연계코스, 관련파일
+FROM trek_eco;
+
+
