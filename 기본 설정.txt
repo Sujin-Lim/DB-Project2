@@ -69,20 +69,6 @@ create table trek_dulle(
 관련파일 varchar2(500));
 
 create table trek_eco(
-순번 number primary key,
-자치구 varchar2(100),
-거리 varchar2(30),
-소요시간 varchar2(50),
-연계지하철 varchar2(50),
-교통편 varchar2(800),
-상세코스 varchar2(500),
-설명 varchar2(4000),
-코스명 varchar2(500),
-코스대분류 varchar2(50),
-강남강북구분 varchar2(10),
-코스레벨 varchar2(10)
-);
-create table trek_eco(
 자치구 varchar2(100),
 코스레벨 varchar2(10),
 코스대분류 varchar2(50),
