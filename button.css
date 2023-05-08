@@ -1,0 +1,352 @@
+
+/* 모든 페이지 색깔은 범위 구분을 위해서 눈에 띄는 색으로 해뒀습니다 */
+
+/* 로그인 페이지 스타일 시작 */
+
+/* 헤더 들어갈 시 wrap부분 margin-top 줘야함 */
+.li-wrap {
+  width: 100%;
+  margin-top: 0;
+}
+
+.li-container {
+  position: absolute;
+  left: 35%;
+  top: 15%;
+}
+
+.li-intro {
+  margin-left: 20px;
+  margin-bottom: 100px;
+}
+
+.li-input {
+  margin-top: 30px;
+}
+
+.li-id,
+.li-pw {
+  width: 500px;
+  height: 50px;
+  font-size: 20px;
+  background-color: #e7e4e4;
+  border-style: none;
+  margin-bottom: 20px;
+}
+
+.li-id::placeholder,
+.li-pw::placeholder {
+  color: #cecece;
+  padding-left: 50px;
+}
+
+.li-login {
+  width: 500px;
+  height: 50px;
+  margin-top: 20px;
+  background-color: #b1b1b1;
+  font-size: 20px;
+  border-style: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.li-j {
+  margin-top: 10%;
+}
+
+.li-join {
+  border-style: none;
+  background-color: none;
+  color: black;
+  background-color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/* 로그인 페이지 스타일 끝 */
+
+/* 헤더 스타일 시작 */
+/* 헤더부분 구분을 위해 색깔 넣음. 완성시 색깔 바꿀 것 */
+.bt-body {
+  margin: 0;
+  padding: 0;
+}
+
+.bt-header {
+  background-color: red;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  z-index: 5000;
+}
+
+.bt-menu {
+  position: absolute;
+  top: 20px;
+  left: 1%;
+}
+
+#bt-h {
+  display: none;
+}
+
+#bt-h + label {
+  display: block;
+  width: 50px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+input[id="bt-h"] + label span {
+  display: block;
+  position: absolute;
+  width: 70%;
+  height: 5px;
+  border-radius: 30px;
+  background: #000;
+}
+
+.bt-h1 {
+  top: 0;
+}
+
+.bt-h2 {
+  top: 45%;
+}
+
+.bt-h3 {
+  bottom: 0;
+}
+
+.bt-hidden-a {
+  float: none;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+/* 숨긴 메뉴 */
+.bt-hidden-menu {
+  height: 270px;
+  background-color: black;
+  display: none;
+  top: 70px;
+  position: fixed;
+  width: 300px;
+  height: 400px;
+  padding-top: 5px;
+  justify-content: center;
+  z-index: 9998;
+}
+
+/* 오른쪽 내정보 */
+.bt-myinfo {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 90%;
+}
+.bt-myinfo-btn {
+  color: black;
+  background-color: red;
+  border-style: none;
+  cursor: pointer;
+}
+
+/* 오른쪽 끝 검색 */
+.bt-search {
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 95%;
+  cursor: pointer;
+}
+
+.bt-search-icon {
+  position: absolute;
+  width: 40px;
+}
+
+.bt-hidden-search {
+  width: 100vw;
+  height: 320px;
+  background-color: rgb(36, 91, 209);
+  position: fixed;
+  display: none;
+  top: 60px;
+  z-index: 5;
+  padding-top: 5px;
+  justify-content: center;
+}
+
+.bt-hidden-tag-wrap {
+  margin-top: 30px;
+  margin-left: 29%;
+}
+
+.bt-search-bar {
+  margin-left: 30%;
+  width: 700px;
+  height: 50px;
+  margin-top: 50px;
+  font-size: 30px;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 2px solid black;
+}
+
+.bt-search-bar:focus {
+  outline: none;
+}
+
+.bt-tag {
+  display: inline;
+  margin-left: 30px;
+}
+
+.bt-search-tag {
+  text-decoration: underline;
+  color: red;
+}
+.bt-hidden-info-list {
+  padding-left: 10px;
+}
+
+.bt-hidden-info-li {
+  float: none;
+  font-size: 13px;
+  font-weight: bold;
+  list-style: none;
+}
+.bt-hidden-i {
+  color: orange;
+  text-decoration: none;
+}
+.bt-hidden-info {
+  top: 70px;
+  background-color: green;
+  display: none;
+  position: fixed;
+  width: 100px;
+  height: 120px;
+  padding-top: 5px;
+  z-index: 9998;
+  margin: 0;
+}
+
+.bt-hidden-info {
+  position: absolute;
+  margin-left: 90%;
+}
+
+/* 헤더 끝 */
+
+/* 푸터 시작 */
+.ft-wrap {
+  width: 100%;
+  height: 80px;
+  background-color: yellow;
+  position: absolute;
+  bottom: auto;
+  text-align: center;
+  padding-bottom: 10px;
+}
+/* 푸터 끝 */
+
+/* 회원가입 */
+.jo-wrap {
+  margin: 0;
+  padding: 0;
+}
+.jo-content {
+  width: 1080px;
+  height: 800px;
+  margin: 0 auto;
+  background: orange;
+  margin-top: 70px;
+  padding-left: 200px;
+  padding-top: 100px;
+}
+.jo-table {
+  margin-left: 10%;
+}
+
+/* 메인페이지 */
+.main-body {
+  margin: 0;
+  padding: 0;
+}
+
+.m-wrap {
+  width: 1080px;
+  margin: 0 auto;
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+.m-search-wr {
+  margin-top: 200px;
+  margin-left: 270px;
+}
+
+.m-search-bar {
+  width: 500px;
+  height: 50px;
+  font-size: 30px;
+}
+
+.m-search-bt {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: skyblue;
+  font-size: 20px;
+}
+
+.m-content {
+	width: 1080px;
+	margin-top: 50px;
+}
+
+.m-content-t {
+	width: 100%;
+	border-spacing: 40px;
+}
+
+
+.m-content-t img {
+	width: 300px;
+}
+.m-content-t td {
+	text-align: center;
+	width: 33.33%;
+}
+
+.m-content-t td a {
+	text-decoration: none;
+	color: black;
+	font-size: 15px;
+}
+
+/* 메인 끝 */
+
+/* 새 메인 */
+
+.m-sub {
+	margin-top: 10px;
+}
+.m-sub-t img {
+	width: 150px;
+}
+.m-sub-t {
+	width: 100%;
+	border-spacing: 100px;
+}
+.m-sub-t td {
+	text-align: center;
+	width: 33.33%;
+}

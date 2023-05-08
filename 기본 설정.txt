@@ -106,3 +106,11 @@ create table food(
 행정동 varchar2(26),
 );
 
+CREATE TABLE game (
+게임장명 VARCHAR2(300),
+지번주소 VARCHAR2(1000),
+도로명주소 VARCHAR2(1000),
+전화번호 VARCHAR2(26),
+취급게임 VARCHAR2(500),
+등급 VARCHAR2(26),
+);
