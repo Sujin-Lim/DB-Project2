@@ -34,10 +34,10 @@ try{
 
   
    // 모든 컬럼에서 데이터를 가져오도록 or로 연결함.
-   String sql = "SELECT * FROM performance WHERE 게임장명 LIKE ? OR 전화번호 LIKE ? OR 지번주소 LIKE ? OR 도로명주소 LIKE ? OR 취급게임 LIKE ? OR 등급 LIKE ?";
+   String sql = "SELECT * FROM game WHERE 게임장명 LIKE ? OR 전화번호 LIKE ? OR 지번주소 LIKE ? OR 도로명주소 LIKE ? OR 취급게임 LIKE ? OR 등급 LIKE ?";
    pstmt = conn.prepareStatement(sql);
    
-   for (int i = 1; i <= 15; i++) {
+   for (int i = 1; i <= 6; i++) {
        pstmt.setString(i, "%" + query + "%");
    }
 
@@ -46,13 +46,13 @@ try{
    
    while(rs.next()){ //조회되는 로우(행) 반복
 	   out.print("<tr>");
-	      out.print("<td>" + rs.getString("게임장명") + "</td>"); 
-	      out.print("<td>" + rs.getString("전화번호") + "</td>");
-	      out.print("<td>" + rs.getString("지번주소") + "</td>");
-	      out.print("<td>" + rs.getString("도로명주소") + "</td>");
-	      out.print("<td>" + rs.getString("취급게임") + "</td>");
-	      out.print("<td>" + rs.getString("등급") + "</td>");
-	      out.print("</tr>");
+	    out.print("<td>" + (rs.getString("게임장명") == null ? "" : rs.getString("게임장명")) + "</td>");
+	    out.print("<td>" + (rs.getString("전화번호") == null ? "" : rs.getString("전화번호")) + "</td>");
+	    out.print("<td>" + (rs.getString("지번주소") == null ? "" : rs.getString("지번주소")) + "</td>");
+	    out.print("<td>" + (rs.getString("도로명주소") == null ? "" : rs.getString("도로명주소")) + "</td>");
+	    out.print("<td>" + (rs.getString("취급게임") == null ? "" : rs.getString("취급게임")) + "</td>");
+	    out.print("<td>" + (rs.getString("등급") == null ? "" : rs.getString("등급")) + "</td>");
+	    out.print("</tr>");
    }
    
    rs.close();

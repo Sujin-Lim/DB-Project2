@@ -21,7 +21,7 @@
 <table border="1">
 <tr>
 <th>자치구</th>
-<th style="width:200px;">코스레벨</th>
+<th>코스레벨</th>
 <th>코스대분류</th>
 <th>코스명</th>
 <th>상세코스</th>

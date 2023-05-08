@@ -14,10 +14,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>서울 둘레길</title>
+<title>서울의 도서관</title>
 </head>
 <body>
-<h2>서울 도서관</h2>
+<h2>서울의 도서관</h2>
 <table border="1">
 <tr>
 <th>도서관명</th>

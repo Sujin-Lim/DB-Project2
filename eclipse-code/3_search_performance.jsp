@@ -30,14 +30,9 @@
 <th>이용요금</th>
 <th>출연자정보</th>
 <th>프로그램소개</th>
-<th>기타내용</th>
 <th>홈페이지주소</th>
-<th>대표이미지</th>
-<th>신청일</th>
-<th>시민/기관</th>
 <th>시작일</th>
 <th>종료일</th>
-<th>테마분류</th>
 </tr>
 <%
 try{
@@ -46,10 +41,11 @@ try{
 
   
    // 모든 컬럼에서 데이터를 가져오도록 or로 연결함.
-   String sql = "SELECT * FROM performance WHERE 분류 LIKE ? OR 자치구 LIKE ? OR 공연행사명 LIKE ? OR 날짜 LIKE ? OR 장소 LIKE ? OR 기관명 LIKE ? OR 이용대상 LIKE ? OR 이용요금 LIKE ? OR 출연자정보 LIKE ? OR 프로그램소개 LIKE ? OR 기타내용 LIKE ? OR 홈페이지주소 LIKE ? OR 대표이미지 LIKE ? OR \"시민/기관\" LIKE ? OR 테마분류 LIKE ?";
+  String sql = "SELECT * FROM performance WHERE 분류 LIKE ? OR 자치구 LIKE ? OR 공연행사명 LIKE ? OR 날짜 LIKE ? OR 장소 LIKE ? OR 기관명 LIKE ? OR 이용대상 LIKE ? OR 이용요금 LIKE ? OR 출연자정보 LIKE ? OR 프로그램소개 LIKE ? OR 홈페이지주소 LIKE ?";
+
    pstmt = conn.prepareStatement(sql);
    
-   for (int i = 1; i <= 15; i++) {
+   for (int i = 1; i <= 13; i++) {
        pstmt.setString(i, "%" + query + "%");
    }
 
@@ -58,25 +54,20 @@ try{
    
    while(rs.next()){ //조회되는 로우(행) 반복
 	   out.print("<tr>");
-	      out.print("<td>" + rs.getString("분류") + "</td>"); 
-	      out.print("<td>" + rs.getString("자치구") + "</td>");
-	      out.print("<td>" + rs.getString("공연행사명") + "</td>");
-	      out.print("<td>" + rs.getString("날짜") + "</td>");
-	      out.print("<td>" + rs.getString("장소") + "</td>");
-	      out.print("<td>" + rs.getString("기관명") + "</td>");
-	      out.print("<td>" + rs.getString("이용대상") + "</td>");
-	      out.print("<td>" + rs.getString("이용요금") + "</td>");
-	      out.print("<td>" + rs.getString("출연자정보") + "</td>");
-	      out.print("<td>" + rs.getString("프로그램소개") + "</td>");
-	      out.print("<td>" + rs.getString("기타내용") + "</td>");
-	      out.print("<td>" + rs.getString("홈페이지주소") + "</td>");
-	      out.print("<td>" + rs.getString("대표이미지") + "</td>");
-	      out.print("<td>" + rs.getString("신청일") + "</td>");
-	      out.print("<td>" + rs.getString("시민/기관") + "</td>");
-	      out.print("<td>" + rs.getString("시작일") + "</td>");
-	      out.print("<td>" + rs.getString("종료일") + "</td>");
-	      out.print("<td>" + rs.getString("테마분류") + "</td>");
-	      out.print("</tr>");
+	    out.print("<td>" + (rs.getString("분류") == null ? "" : rs.getString("분류")) + "</td>");
+	    out.print("<td>" + (rs.getString("자치구") == null ? "" : rs.getString("자치구")) + "</td>");
+	    out.print("<td>" + (rs.getString("공연행사명") == null ? "" : rs.getString("공연행사명")) + "</td>");
+	    out.print("<td>" + (rs.getString("날짜") == null ? "" : rs.getString("날짜")) + "</td>");
+	    out.print("<td>" + (rs.getString("장소") == null ? "" : rs.getString("장소")) + "</td>");
+	    out.print("<td>" + (rs.getString("기관명") == null ? "" : rs.getString("기관명")) + "</td>");
+	    out.print("<td>" + (rs.getString("이용대상") == null ? "" : rs.getString("이용대상")) + "</td>");
+	    out.print("<td>" + (rs.getString("이용요금") == null ? "" : rs.getString("이용요금")) + "</td>");
+	    out.print("<td>" + (rs.getString("출연자정보") == null ? "" : rs.getString("출연자정보")) + "</td>");
+	    out.print("<td>" + (rs.getString("프로그램소개") == null ? "" : rs.getString("프로그램소개")) + "</td>");
+	    out.print("<td>" + (rs.getString("홈페이지주소") == null ? "" : rs.getString("홈페이지주소")) + "</td>");
+	    out.print("<td>" + (rs.getString("시작일") == null ? "" : rs.getString("시작일")) + "</td>");
+	    out.print("<td>" + (rs.getString("종료일") == null ? "" : rs.getString("종료일")) + "</td>");
+	    out.print("</tr>");
    }
    
    rs.close();

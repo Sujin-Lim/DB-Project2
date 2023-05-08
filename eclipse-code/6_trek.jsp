@@ -29,7 +29,7 @@
     <body class="main-body">
       <div class="header"></div>
       <div class="m-wrap">
-        <form action="search_trek.jsp" method="get">
+        <form action="6_search_trek.jsp" method="get">
           <div class="m-search-wr">
             <table class="m-search-t">
               <tr>

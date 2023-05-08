@@ -27,7 +27,7 @@
     <body class="main-body">
       <div class="header"></div>
       <div class="m-wrap">
-        <form action="search_book.jsp" method="get">
+        <form action="2_search_book.jsp" method="get">
           <div class="m-search-wr">
             <table class="m-search-t">
               <tr>
