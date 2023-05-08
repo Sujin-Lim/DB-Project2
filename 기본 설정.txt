@@ -93,3 +93,16 @@ SELECT 자치구, 코스레벨, 코스대분류, 코스명, 상세코스, 설명
 FROM trek_eco;
 
 
+
+create table food(
+키 varchar2(26),
+분류1 varchar2(26),
+분류2 varchar2(26),
+분류3 varchar2(26),
+검색어 varchar2(40),
+명칭 varchar2(40),
+행정시 varchar2(26),
+행정구 varchar2(26),
+행정동 varchar2(26),
+);
+
