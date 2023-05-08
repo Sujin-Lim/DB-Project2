@@ -30,7 +30,7 @@
 
         if (result > 0) {
             // 회원 정보 수정 성공 시
-            out.println("<script>alert('회원 정보가 수정되었습니다.'); location.href='main.jsp';</script>");
+            out.println("<script>alert('회원 정보가 수정되었습니다.'); location.href='newmain.jsp';</script>");
         } else {
             // 회원 정보 수정 실패 시
             out.println("<script>alert('회원 정보 수정에 실패하였습니다.'); history.back();</script>");

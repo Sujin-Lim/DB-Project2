@@ -49,16 +49,16 @@ try{
    
    while(rs.next()){ //조회되는 로우(행) 반복
 	   out.print("<tr>");
-	    out.print("<td>" + (rs.getString("키") == null ? "" : rs.getString("키")) + "</td>");
-	    out.print("<td>" + (rs.getString("분류1") == null ? "" : rs.getString("분류1")) + "</td>");
-	    out.print("<td>" + (rs.getString("분류2") == null ? "" : rs.getString("분류2")) + "</td>");
-	    out.print("<td>" + (rs.getString("분류3") == null ? "" : rs.getString("분류3")) + "</td>");
-	    out.print("<td>" + (rs.getString("검색어") == null ? "" : rs.getString("검색어")) + "</td>");
-	    out.print("<td>" + (rs.getString("명칭") == null ? "" : rs.getString("명칭")) + "</td>");
-	    out.print("<td>" + (rs.getString("행정시") == null ? "" : rs.getString("행정시")) + "</td>");
-	    out.print("<td>" + (rs.getString("행정구") == null ? "" : rs.getString("행정구")) + "</td>");
-	    out.print("<td>" + (rs.getString("행정동") == null ? "" : rs.getString("행정동")) + "</td>");
-	    out.print("</tr>");
+	      out.print("<td>" + rs.getString("키") + "</td>"); 
+	      out.print("<td>" + rs.getString("분류1") + "</td>");
+	      out.print("<td>" + rs.getString("분류2") + "</td>");
+	      out.print("<td>" + rs.getString("분류3") + "</td>");
+	      out.print("<td>" + rs.getString("검색어") + "</td>");
+	      out.print("<td>" + rs.getString("명칭") + "</td>");
+	      out.print("<td>" + rs.getString("행정시") + "</td>");
+	      out.print("<td>" + rs.getString("행정구") + "</td>");
+	      out.print("<td>" + rs.getString("행정동") + "</td>");
+	      out.print("</tr>");
    }
    
    rs.close();

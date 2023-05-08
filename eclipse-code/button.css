@@ -80,7 +80,7 @@
 .bt-header {
   background-color: white;
   width: 100%;
-  height: 70px;
+  height: 250px;
   position: fixed;
   top: 0;
   display: flex;
@@ -139,7 +139,7 @@ input[id="bt-h"] + label span {
   height: 270px;
   background-color: black;
   display: none;
-  top: 70px;
+  top: 250px;
   position: fixed;
   width: 300px;
   height: 400px;
@@ -149,12 +149,10 @@ input[id="bt-h"] + label span {
 }
 
 
-.bt-myinfo {
-  position: fixed;
-  margin-top: 20px;
-  margin-left: 90%;
-}
+
 .bt-myinfo-btn {
+	position: absolute;
+	margin-left: 25%;
   color: black;
   background-color: white;
   border-style: none;
@@ -169,6 +167,7 @@ input[id="bt-h"] + label span {
 }
 
 .bt-search-icon {
+	margin-left: 30%;
   position: absolute;
   width: 40px;
 }
@@ -177,12 +176,13 @@ input[id="bt-h"] + label span {
   width: 100vw;
   height: 320px;
   background-color: rgb(36, 91, 209);
-  position: fixed;
+  position: absolute;
   display: none;
   top: 60px;
   z-index: 5;
   padding-top: 5px;
   justify-content: center;
+  	overflow:hidden;
 }
 
 .bt-hidden-tag-wrap {
@@ -230,7 +230,7 @@ input[id="bt-h"] + label span {
   text-decoration: none;
 }
 .bt-hidden-info {
-  top: 70px;
+  top: 250px;
   background-color: white;
   display: none;
   position: fixed;
@@ -246,6 +246,12 @@ input[id="bt-h"] + label span {
   margin-left: 90%;
 }
 
+.logo {
+	overflow: hidden;
+	position: relative;
+	width:400px;
+	margin-left:600px;
+}
 
 /* footer.jsp */
 
@@ -266,11 +272,13 @@ input[id="bt-h"] + label span {
   padding: 0;
 }
 .jo-content {
+	overflow: hidden;
+	position: relative;
   width: 1080px;
   height: 800px;
   margin: 0 auto;
   background: orange;
-  margin-top: 70px;
+  margin-top: 250px;
   padding-left: 200px;
   padding-top: 100px;
 }
@@ -288,7 +296,7 @@ input[id="bt-h"] + label span {
 .m-wrap {
   width: 1080px;
   margin: 0 auto;
-  margin-top: 70px;
+  margin-top: 250px;
   margin-bottom: 100px;
 }
 

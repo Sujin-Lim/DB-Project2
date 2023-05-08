@@ -9,29 +9,40 @@
    
    String query = request.getParameter("query");
 %>
- <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>통합 검색 결과</title>
-</head>
-<body>
+              <!DOCTYPE html>
+              <html>
 
+              <head>
+                <meta charset="UTF-8">
+                <title>통합검색결과</title>
+              </head>
 
-<div class="exer">
-<h1> 체육시설 검색 결과 </h1>
-<div class="exer_r">
-<table border="1">
+              <body>
+                <div class=s-wrap>
+                  <div class="s-performance">
+                    <h1>공연 검색 결과</h1>
+                      <table border="1">
 <tr>
-	<th>시군구</th>
-	<th>시설명</th>
-	<th>소유기관</th>
-	<th>관리주체</th>
-	<th>바닥재료</th>
-	<th>좌석수</th>
-	<th>수용인원</th>
-	<th>준공연도</th>
+<th>분류</th>
+<th>자치구</th>
+<th>공연행사명</th>
+<th>날짜</th>
+<th>장소</th>
+<th>기관명</th>
+<th>이용대상</th>
+<th>이용요금</th>
+<th>출연자정보</th>
+<th>프로그램소개</th>
+<th>기타내용</th>
+<th>홈페이지주소</th>
+<th>대표이미지</th>
+<th>신청일</th>
+<th>시민/기관</th>
+<th>시작일</th>
+<th>종료일</th>
+<th>테마분류</th>
 </tr>
+
 <%
 try{
 	Class.forName("oracle.jdbc.driver.OracleDriver"); //driver
@@ -39,11 +50,10 @@ try{
 
   
    // 모든 컬럼에서 데이터를 가져오도록 or로 연결함.
-
-   String sql = "SELECT * FROM exercise WHERE 시군구 LIKE ? OR 시설명 LIKE ? OR 소유기관 LIKE ? OR 관리주체 LIKE ? OR 바닥재료 LIKE ? OR 좌석수 LIKE ? OR 수용인원 LIKE ? OR 준공연도 LIKE ?";
+   String sql = "SELECT * FROM performance WHERE 분류 LIKE ? OR 자치구 LIKE ? OR 공연행사명 LIKE ? OR 날짜 LIKE ? OR 장소 LIKE ? OR 기관명 LIKE ? OR 이용대상 LIKE ? OR 이용요금 LIKE ? OR 출연자정보 LIKE ? OR 프로그램소개 LIKE ? OR 기타내용 LIKE ? OR 홈페이지주소 LIKE ? OR 대표이미지 LIKE ? OR \"시민/기관\" LIKE ? OR 테마분류 LIKE ?";
    pstmt = conn.prepareStatement(sql);
    
-   for (int i = 1; i <= 8; i++) {
+   for (int i = 1; i <= 15; i++) {
        pstmt.setString(i, "%" + query + "%");
    }
 
@@ -52,15 +62,25 @@ try{
    
    while(rs.next()){ //조회되는 로우(행) 반복
 	   out.print("<tr>");
-	    out.print("<td>" + (rs.getString("시군구") == null ? "" : rs.getString("시군구")) + "</td>");
-	    out.print("<td>" + (rs.getString("시설명") == null ? "" : rs.getString("시설명")) + "</td>");
-	    out.print("<td>" + (rs.getString("소유기관") == null ? "" : rs.getString("소유기관")) + "</td>");
-	    out.print("<td>" + (rs.getString("관리주체") == null ? "" : rs.getString("관리주체")) + "</td>");
-	    out.print("<td>" + (rs.getString("바닥재료") == null ? "" : rs.getString("바닥재료")) + "</td>");
-	    out.print("<td>" + (rs.getString("좌석수") == null ? "" : rs.getString("좌석수")) + "</td>");
-	    out.print("<td>" + (rs.getString("수용인원") == null ? "" : rs.getString("수용인원")) + "</td>");
-	    out.print("<td>" + (rs.getString("준공연도") == null ? "" : rs.getString("준공연도")) + "</td>");
-	    out.print("</tr>");
+	      out.print("<td>" + rs.getString("분류") + "</td>"); 
+	      out.print("<td>" + rs.getString("자치구") + "</td>");
+	      out.print("<td>" + rs.getString("공연행사명") + "</td>");
+	      out.print("<td>" + rs.getString("날짜") + "</td>");
+	      out.print("<td>" + rs.getString("장소") + "</td>");
+	      out.print("<td>" + rs.getString("기관명") + "</td>");
+	      out.print("<td>" + rs.getString("이용대상") + "</td>");
+	      out.print("<td>" + rs.getString("이용요금") + "</td>");
+	      out.print("<td>" + rs.getString("출연자정보") + "</td>");
+	      out.print("<td>" + rs.getString("프로그램소개") + "</td>");
+	      out.print("<td>" + rs.getString("기타내용") + "</td>");
+	      out.print("<td>" + rs.getString("홈페이지주소") + "</td>");
+	      out.print("<td>" + rs.getString("대표이미지") + "</td>");
+	      out.print("<td>" + rs.getString("신청일") + "</td>");
+	      out.print("<td>" + rs.getString("시민/기관") + "</td>");
+	      out.print("<td>" + rs.getString("시작일") + "</td>");
+	      out.print("<td>" + rs.getString("종료일") + "</td>");
+	      out.print("<td>" + rs.getString("테마분류") + "</td>");
+	      out.print("</tr>");
    }
    
    rs.close();
@@ -71,14 +91,61 @@ try{
 }
 %>
 </table>
-</div>
-</div>
+                    </div>
 
+                  </div>
+                  <div class="s-exercise">
+                    <h1>운동 검색 결과</h1>
+                    <div class="s-exercise-result">
+                      <table border="1">
+                        <tr>
+                          <th>시군구</th>
+                          <th>시설명</th>
+                          <th>소유기관</th>
+                          <th>관리주체</th>
+                          <th>부지면적</th>
+                          <th>건축면적</th>
+                          <th>연면적</th>
+                          <th>바닥재료</th>
+                          <th>좌석수</th>
+                          <th>수용인원</th>
+                          <th>준공연도</th>
+                        </tr>
+                        
+                        <% try{ Class.forName("oracle.jdbc.driver.OracleDriver"); //driver
+                          conn=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system" , "1234" );
+                          //username, password는 개인 Oracle 계정의 것으로 하면 됨 // 모든 컬럼에서 데이터를 가져오도록 or로 연결함. 
+                          String sql="SELECT * FROM performance WHERE 시군구 LIKE ? OR 시설명 LIKE ? OR 소유기관 LIKE ? OR 관리주체 LIKE ? OR 부지면적 LIKE ? OR 건축면적 LIKE ? OR 연면적 LIKE ? OR 바닥재료 LIKE ? OR 좌석수 LIKE ? OR 수용인원 LIKE ? OR 준공연도 LIKE ?"
+                          ; pstmt=conn.prepareStatement(sql); for (int i=1; i <=15; i++) { pstmt.setString(i, "%" +
+                          query + "%" ); } rs=pstmt.executeQuery(); while(rs.next()){ //조회되는 로우(행) 반복 out.print("<tr>");
+                          out.print("<td>" + rs.getString("시군구") + "</td>");
+                          out.print("<td>" + rs.getString("시설명") + "</td>");
+                          out.print("<td>" + rs.getString("소유기관") + "</td>");
+                          out.print("<td>" + rs.getString("관리주체") + "</td>");
+                          out.print("<td>" + rs.getString("부지면적") + "</td>");
+                          out.print("<td>" + rs.getString("건축면적") + "</td>");
+                          out.print("<td>" + rs.getString("연면적") + "</td>");
+                          out.print("<td>" + rs.getString("바닥재료") + "</td>");
+                          out.print("<td>" + rs.getString("좌석수") + "</td>");
+                          out.print("<td>" + rs.getString("수용인원") + "</td>");
+                          out.print("<td>" + rs.getString("준공연도") + "</td>");
+                          out.print("</tr>");
+                          }
 
-<div class="book">
-<h1> 도서관 검색 결과 </h1>
-<div class="book-r">
-<table border="1">
+                          rs.close();
+                          pstmt.close();
+                          conn.close();
+                          }catch(Exception e){
+                          e.printStackTrace();
+                          }
+%>
+</table>
+                    </div>
+                  </div>
+                  <div class="s-book">
+                    <h1>도서관 검색 결과</h1>
+                    <div class="s-book-result">
+                      <table border="1">
 <tr>
 <th>도서관명</th>
 <th>구명</th>
@@ -89,6 +156,7 @@ try{
 <th>정기휴관일</th>
 <th>도서관구분명</th>
 </tr>
+
 <%
 try{
 	Class.forName("oracle.jdbc.driver.OracleDriver"); //driver
@@ -128,195 +196,95 @@ try{
 }
 %>
 </table>
-</div>
-</div>
+                    </div>
+                  </div>
+                  <div class="s-game">
+                    <h1>게임 검색 결과</h1>
+                    <div class="s-game-result">
+                      <table border="1">
+                        <tr>
+                          <th>게임장명</th>
+                          <th>전화번호</th>
+                          <th>지번주소</th>
+                          <th>도로명주소</th>
+                          <th>취급게임</th>
+                          <th>등급</th>
+                        </tr>
+                        <% try{ Class.forName("oracle.jdbc.driver.OracleDriver"); //driver
+                          conn=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "Button" , "1234" );
+                          //username, password는 개인 Oracle 계정의 것으로 하면 됨 // 모든 컬럼에서 데이터를 가져오도록 or로 연결함. 
+                          String sql="SELECT * FROM performance WHERE 게임장명 LIKE ? OR 전화번호 LIKE ? OR 지번주소 LIKE ? OR 도로명주소 LIKE ? OR 취급게임 LIKE ? OR 등급 LIKE ?"
+                          ; pstmt=conn.prepareStatement(sql); for (int i=1; i <=15; i++) { pstmt.setString(i, "%" +
+                          query + "%" ); } rs=pstmt.executeQuery(); while(rs.next()){ //조회되는 로우(행) 반복 out.print("<tr>");
+                          out.print("<td>" + rs.getString("게임장명") + "</td>");
+                          out.print("<td>" + rs.getString("전화번호") + "</td>");
+                          out.print("<td>" + rs.getString("지번주소") + "</td>");
+                          out.print("<td>" + rs.getString("도로명주소") + "</td>");
+                          out.print("<td>" + rs.getString("취급게임") + "</td>");
+                          out.print("<td>" + rs.getString("등급") + "</td>");
+                          out.print("</tr>");
+                          }
 
-
-
-<div class="perf">
-<h1>공연 검색 결과</h1>
-<div class="perf_r">
-<table border="1">
-<tr>
-<th>분류</th>
-<th>자치구</th>
-<th>공연행사명</th>
-<th>날짜</th>
-<th>장소</th>
-<th>기관명</th>
-<th>이용대상</th>
-<th>이용요금</th>
-<th>출연자정보</th>
-<th>프로그램소개</th>
-<th>홈페이지주소</th>
-<th>시작일</th>
-<th>종료일</th>
-</tr>
-<%
-try{
-	Class.forName("oracle.jdbc.driver.OracleDriver"); //driver
-    conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "Button", "1234"); //username, password는 개인 Oracle 계정의 것으로 하면 됨
-
-  
-   // 모든 컬럼에서 데이터를 가져오도록 or로 연결함.
-  String sql = "SELECT * FROM performance WHERE 분류 LIKE ? OR 자치구 LIKE ? OR 공연행사명 LIKE ? OR 날짜 LIKE ? OR 장소 LIKE ? OR 기관명 LIKE ? OR 이용대상 LIKE ? OR 이용요금 LIKE ? OR 출연자정보 LIKE ? OR 프로그램소개 LIKE ? OR 홈페이지주소 LIKE ? ";
-
-
-   pstmt = conn.prepareStatement(sql);
-   
-   for (int i = 1; i <= 11; i++) {
-       pstmt.setString(i, "%" + query + "%");
-   }
-
-   rs = pstmt.executeQuery();
-
-   
-   while(rs.next()){ //조회되는 로우(행) 반복
-	   out.print("<tr>");
-	    out.print("<td>" + (rs.getString("분류") == null ? "" : rs.getString("분류")) + "</td>");
-	    out.print("<td>" + (rs.getString("자치구") == null ? "" : rs.getString("자치구")) + "</td>");
-	    out.print("<td>" + (rs.getString("공연행사명") == null ? "" : rs.getString("공연행사명")) + "</td>");
-	    out.print("<td>" + (rs.getString("날짜") == null ? "" : rs.getString("날짜")) + "</td>");
-	    out.print("<td>" + (rs.getString("장소") == null ? "" : rs.getString("장소")) + "</td>");
-	    out.print("<td>" + (rs.getString("기관명") == null ? "" : rs.getString("기관명")) + "</td>");
-	    out.print("<td>" + (rs.getString("이용대상") == null ? "" : rs.getString("이용대상")) + "</td>");
-	    out.print("<td>" + (rs.getString("이용요금") == null ? "" : rs.getString("이용요금")) + "</td>");
-	    out.print("<td>" + (rs.getString("출연자정보") == null ? "" : rs.getString("출연자정보")) + "</td>");
-	    out.print("<td>" + (rs.getString("프로그램소개") == null ? "" : rs.getString("프로그램소개")) + "</td>");
-	    out.print("<td>" + (rs.getString("홈페이지주소") == null ? "" : rs.getString("홈페이지주소")) + "</td>");
-	    out.print("<td>" + (rs.getString("시작일") == null ? "" : rs.getString("시작일")) + "</td>");
-	    out.print("<td>" + (rs.getString("종료일") == null ? "" : rs.getString("종료일")) + "</td>");
-	    out.print("</tr>");
-   }
-   
-   rs.close();
-   pstmt.close();
-   conn.close();
-}catch(Exception e){
-   e.printStackTrace();
-}
-%>
-</table>
-</div>
-</div>
-
-
-<div class="game">
-<h1>게임 검색 결과</h1>
-<div class="game_r">
-<table border="1">
-<tr>
-<th>게임장명</th>
-<th>전화번호</th>
-<th>지번주소</th>
-<th>도로명주소</th>
-<th>취급게임</th>
-<th>등급</th>
-</tr>
-<%
-try{
-	Class.forName("oracle.jdbc.driver.OracleDriver"); //driver
-    conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "Button", "1234"); //username, password는 개인 Oracle 계정의 것으로 하면 됨
-
-  
-   // 모든 컬럼에서 데이터를 가져오도록 or로 연결함.
-   String sql = "SELECT * FROM game WHERE 게임장명 LIKE ? OR 전화번호 LIKE ? OR 지번주소 LIKE ? OR 도로명주소 LIKE ? OR 취급게임 LIKE ? OR 등급 LIKE ?";
-   pstmt = conn.prepareStatement(sql);
-   
-   for (int i = 1; i <= 6; i++) {
-       pstmt.setString(i, "%" + query + "%");
-   }
-
-   rs = pstmt.executeQuery();
-
-   
-   while(rs.next()){ //조회되는 로우(행) 반복
-	   out.print("<tr>");
-	    out.print("<td>" + (rs.getString("게임장명") == null ? "" : rs.getString("게임장명")) + "</td>");
-	    out.print("<td>" + (rs.getString("전화번호") == null ? "" : rs.getString("전화번호")) + "</td>");
-	    out.print("<td>" + (rs.getString("지번주소") == null ? "" : rs.getString("지번주소")) + "</td>");
-	    out.print("<td>" + (rs.getString("도로명주소") == null ? "" : rs.getString("도로명주소")) + "</td>");
-	    out.print("<td>" + (rs.getString("취급게임") == null ? "" : rs.getString("취급게임")) + "</td>");
-	    out.print("<td>" + (rs.getString("등급") == null ? "" : rs.getString("등급")) + "</td>");
-	    out.print("</tr>");
-   }
-   
-   rs.close();
-   pstmt.close();
-   conn.close();
-}catch(Exception e){
-   e.printStackTrace();
-}
-%>
-</table>
- </div>
-</div>
-
-
-<div class="food">
-<h1>맛집 검색 결과</h1>
-<div class="food_r">
-<table border="1">
-<tr>
-<th>키</th>
-<th>분류1</th>
-<th>분류2</th>
-<th>분류3</th>
-<th>검색어</th>
-<th>명칭</th>
-<th>행정시</th>
-<th>행정구</th>
-<th>행정동</th>
-</tr>
-<%
-try{
-	Class.forName("oracle.jdbc.driver.OracleDriver"); //driver
-    conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "button", "1234"); //username, password는 개인 Oracle 계정의 것으로 하면 됨
-
-  
-   // 모든 컬럼에서 데이터를 가져오도록 or로 연결함.
-   String sql = "SELECT * FROM food WHERE 키 LIKE ? OR 분류1 LIKE ? OR 분류2 LIKE ? OR 분류3 LIKE ? OR 검색어 LIKE ? OR 명칭 LIKE ? OR 행정시 LIKE ? OR 행정구 LIKE ? OR 행정동 LIKE ?";
-   pstmt = conn.prepareStatement(sql);
-   
-   for (int i = 1; i <= 9; i++) {
-       pstmt.setString(i, "%" + query + "%");
-   }
-
-   rs = pstmt.executeQuery();
-
-   
-   while(rs.next()){ //조회되는 로우(행) 반복
-	   out.print("<tr>");
-	    out.print("<td>" + (rs.getString("키") == null ? "" : rs.getString("키")) + "</td>");
-	    out.print("<td>" + (rs.getString("분류1") == null ? "" : rs.getString("분류1")) + "</td>");
-	    out.print("<td>" + (rs.getString("분류2") == null ? "" : rs.getString("분류2")) + "</td>");
-	    out.print("<td>" + (rs.getString("분류3") == null ? "" : rs.getString("분류3")) + "</td>");
-	    out.print("<td>" + (rs.getString("검색어") == null ? "" : rs.getString("검색어")) + "</td>");
-	    out.print("<td>" + (rs.getString("명칭") == null ? "" : rs.getString("명칭")) + "</td>");
-	    out.print("<td>" + (rs.getString("행정시") == null ? "" : rs.getString("행정시")) + "</td>");
-	    out.print("<td>" + (rs.getString("행정구") == null ? "" : rs.getString("행정구")) + "</td>");
-	    out.print("<td>" + (rs.getString("행정동") == null ? "" : rs.getString("행정동")) + "</td>");
-	    out.print("</tr>");
-   }
-   
-   rs.close();
-   pstmt.close();
-   conn.close();
-}catch(Exception e){
-   e.printStackTrace();
-}
+                          rs.close();
+                          pstmt.close();
+                          conn.close();
+                          }catch(Exception e){
+                          e.printStackTrace();
+                          }
 
 %>
 </table>
-  
-</div>
-</div>
+                    </div>
+                  </div>
+                  <div class="s-food">
+                    <h1>맛집 검색 결과</h1>
+                    <div class="s-food-result">
+                      <table border="1">
+                        <tr>
+                          <th>키</th>
+                          <th>분류1</th>
+                          <th>분류2</th>
+                          <th>분류3</th>
+                          <th>검색어</th>
+                          <th>명칭</th>
+                          <th>행정시</th>
+                          <th>행정구</th>
+                          <th>행정동</th>
+                        </tr>
+                        
+                        <% try{ Class.forName("oracle.jdbc.driver.OracleDriver"); //driver
+                          conn=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "button" , "1234" );
+                          //username, password는 개인 Oracle 계정의 것으로 하면 됨 // 모든 컬럼에서 데이터를 가져오도록 or로 연결함. 
+                          String sql="SELECT * FROM food WHERE 키 LIKE ? OR 분류1 LIKE ? OR 분류2 LIKE ? OR 분류3 LIKE ? OR 검색어 LIKE ? OR 명칭 LIKE ? OR 행정시 LIKE ? OR 행정구 LIKE ? OR 행정동 LIKE ?"
+                          ; pstmt=conn.prepareStatement(sql); for (int i=1; i <=9; i++) { pstmt.setString(i, "%" + query
+                          + "%" ); } rs=pstmt.executeQuery(); while(rs.next()){ //조회되는 로우(행) 반복 out.print("<tr>");
+                          out.print("<td>" + rs.getString("키") + "</td>");
+                          out.print("<td>" + rs.getString("분류1") + "</td>");
+                          out.print("<td>" + rs.getString("분류2") + "</td>");
+                          out.print("<td>" + rs.getString("분류3") + "</td>");
+                          out.print("<td>" + rs.getString("검색어") + "</td>");
+                          out.print("<td>" + rs.getString("명칭") + "</td>");
+                          out.print("<td>" + rs.getString("행정시") + "</td>");
+                          out.print("<td>" + rs.getString("행정구") + "</td>");
+                          out.print("<td>" + rs.getString("행정동") + "</td>");
+                          out.print("</tr>");
+                          }
 
+                          rs.close();
+                          pstmt.close();
+                          conn.close();
+                          }catch(Exception e){
+                          e.printStackTrace();
+                          }
 
- <div class="trek">
-<h1>둘레길 검색 결과</h1>
-<div class="trek_r">
-<table border="1">
+%>
+</table>
+                    </div>
+                  </div>
+                  <div class="s-walk">
+                    <h1>둘레길 검색 결과</h1>
+                    <div class="s-walk-result">
+                      <table border="1">
 <tr>
 <th>자치구</th>
 <th>코스레벨</th>
@@ -331,7 +299,9 @@ try{
 <th>연계코스</th>
 <th>관련파일</th>
 </tr>
-<% try{
+
+<%
+try{
 	Class.forName("oracle.jdbc.driver.OracleDriver"); //driver
     conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "Button", "1234"); //username, password는 개인 Oracle 계정의 것으로 하면 됨
 
@@ -379,6 +349,7 @@ try{
       e.printStackTrace();
    }
 }
+
 %>
 </table>
 

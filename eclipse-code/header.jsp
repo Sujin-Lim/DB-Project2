@@ -27,12 +27,9 @@
           </label>
         </div>
       </div>
-      <div class="bt-myinfo">
+      <img class="logo" src="img/logo.png" alt="로고">
         <input class="bt-myinfo-btn" type="button" value="내 정보">
-      </div>
-      <div class="bt-search">
         <img class="bt-search-icon" src="img/search.png" alt="검색">
-      </div>
     </div>
   </div>
   <div class="bt-hidden-menu">
@@ -46,9 +43,8 @@
     </ul>
   </div>
   <div class="bt-hidden-search">
-  <form action="search.jsp" method="get">
-  <!-- submit 버튼을 주지 않아도 엔터로 이동 가능 -->
-    <input class="bt-search-bar" type="text" name="query"><br>
+  <form action="searchsj.jsp" method="get">
+    <input class="bt-search-bar" type="text" name="query">
     </form>
     <div class="bt-hidden-tag-wrap">
       <div class="bt-tag"><a class="bt-search-tag"> #검색어 추천 1</a></div>

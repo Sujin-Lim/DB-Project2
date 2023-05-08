@@ -57,14 +57,14 @@
             <div class="m-sub">
               <table class="m-sub-t">
                 <tr>
-                  <td><a href="1_exercise.jsp"><img src="img/exercise.png" alt="운동"></a></td>
-                  <td><a href="2_book.jsp"><img src="img/book.png" alt="도서관"></a></td>
-                  <td><a href="3_performance.jsp"><img src="img/performance.png" alt="공연"></a></td>
+                  <td><a href="exercise.jsp"><img src="img/exercise.png" alt="운동"></a></td>
+                  <td><a href="performance.jsp"><img src="img/painting.png" alt="공연"></a></td>
+                  <td><a href="book"><img src="img/movie.png" alt="영화"></a></td>
                 </tr>
                 <tr>
-                  <td><a href="4_game.jsp"><img src="img/game.png" alt="게임"></a></td>
-                  <td><a href="5_food.jsp"><img src="img/food.png" alt="음식점"></a></td>
-                  <td><a href="6_trek.jsp"><img src="img/walk.png" alt="둘레길"></a></td>
+                  <td><a href="game"><img src="img/game.png" alt="게임"></a></td>
+                  <td><a href="food"><img src="img/book.png" alt="책"></a></td>
+                  <td><a href="walk"><img src="img/ball.png" alt="운동장"></a></td>
                 </tr>
               </table>
 
