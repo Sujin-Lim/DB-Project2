@@ -45,16 +45,25 @@
       <div class="header"></div>
       <div class="m-wrap">
         <form action="search_exercise.jsp" method="get">
-        <form action="search_performance.jsp" method="get">
           <div class="m-search-wr">
             <table class="m-search-t">
               <tr>
                 <td><input class="m-search-bar" type="text" name="query"></td>
-                <td><input class="m-search-bt" type="submit" value="검색"></td>
+                <td><input class="m-search-bt" type="submit" value="검색" onsubmit="formsubmit()"></td>
               </tr>
             </table>
             </div>
             </form>
+			
+			<script>
+				function formsubmit() {
+					
+				}
+			</script>
+            
+            
+            
+            
             <div class="m-sub">
               <table class="m-sub-t">
                 <tr>

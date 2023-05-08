@@ -22,6 +22,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<title>서울 공공 체육시설</title>
 <title>공연 리스트</title>
 </head>
 <body>
@@ -47,10 +48,17 @@ try{
 
   
    // 모든 컬럼에서 데이터를 가져오도록 or로 연결함.
+<<<<<<< HEAD
+   String sql = "SELECT * FROM exercise WHERE 시군구 LIKE ? OR 시설명 LIKE ? OR 소유기관 LIKE ? OR 관리주체 LIKE ? OR 부지면적 LIKE ? OR 건축면적 LIKE ? OR 연면적 LIKE ? OR 바닥재료 LIKE ? OR 좌석수 LIKE ? OR 수용인원 LIKE ? OR 준공연도 LIKE ?";
+   pstmt = conn.prepareStatement(sql);
+   
+   for (int i = 1; i <= 11; i++) {
+=======
    String sql = "SELECT * FROM performance WHERE 시군구 LIKE ? OR 시설명 LIKE ? OR 소유기관 LIKE ? OR 관리주체 LIKE ? OR 부지면적 LIKE ? OR 건축면적 LIKE ? OR 연면적 LIKE ? OR 바닥재료 LIKE ? OR 좌석수 LIKE ? OR 수용인원 LIKE ? OR 준공연도 LIKE ?";
    pstmt = conn.prepareStatement(sql);
    
    for (int i = 1; i <= 15; i++) {
+>>>>>>> 90d7d6c2f25f4864938e21eae4eedde6ec4a1d09
        pstmt.setString(i, "%" + query + "%");
    }
 
