@@ -45,6 +45,7 @@
       <div class="header"></div>
       <div class="m-wrap">
         <form action="search_exercise.jsp" method="get">
+        <form action="search_performance.jsp" method="get">
           <div class="m-search-wr">
             <table class="m-search-t">
               <tr>
