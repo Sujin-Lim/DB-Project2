@@ -15,7 +15,6 @@
 <head>
 <meta charset="UTF-8">
 <title>서울 공공 체육시설</title>
-<title>공연 리스트</title>
 </head>
 <body>
 <h2>서울 공공 체육시설</h2>

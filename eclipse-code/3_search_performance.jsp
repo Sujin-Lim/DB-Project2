@@ -41,11 +41,12 @@ try{
 
   
    // 모든 컬럼에서 데이터를 가져오도록 or로 연결함.
-  String sql = "SELECT * FROM performance WHERE 분류 LIKE ? OR 자치구 LIKE ? OR 공연행사명 LIKE ? OR 날짜 LIKE ? OR 장소 LIKE ? OR 기관명 LIKE ? OR 이용대상 LIKE ? OR 이용요금 LIKE ? OR 출연자정보 LIKE ? OR 프로그램소개 LIKE ? OR 홈페이지주소 LIKE ?";
+  String sql = "SELECT * FROM performance WHERE 분류 LIKE ? OR 자치구 LIKE ? OR 공연행사명 LIKE ? OR 날짜 LIKE ? OR 장소 LIKE ? OR 기관명 LIKE ? OR 이용대상 LIKE ? OR 이용요금 LIKE ? OR 출연자정보 LIKE ? OR 프로그램소개 LIKE ? OR 홈페이지주소 LIKE ? ";
+
 
    pstmt = conn.prepareStatement(sql);
    
-   for (int i = 1; i <= 13; i++) {
+   for (int i = 1; i <= 11; i++) {
        pstmt.setString(i, "%" + query + "%");
    }
 

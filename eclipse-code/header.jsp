@@ -46,7 +46,8 @@
     </ul>
   </div>
   <div class="bt-hidden-search">
-  <form action="searchsj.jsp" method="get">
+  <form action="search.jsp" method="get">
+  <!-- submit 버튼을 주지 않아도 엔터로 이동 가능 -->
     <input class="bt-search-bar" type="text" name="query"><br>
     </form>
     <div class="bt-hidden-tag-wrap">

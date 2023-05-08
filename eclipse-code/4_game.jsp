@@ -7,7 +7,7 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Main</title>
+      <title>서울 게임장 정보</title>
 
       <link rel="stylesheet" href="button.css">
 
