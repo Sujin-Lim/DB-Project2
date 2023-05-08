@@ -26,9 +26,9 @@
 </head>
 <body>
 <center><h2>음식점 리스트</h2></center>
-<table width="800" border="1" align="center">
+<table style="width:800px;">
 <tr>
-<th>키</th>
+<th st>키</th>
 <th>분류1</th>
 <th>분류2</th>
 <th>분류3</th>

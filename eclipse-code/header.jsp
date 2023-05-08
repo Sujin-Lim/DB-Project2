@@ -41,10 +41,12 @@
       <li class="bt-hidden-li"><a class="bt-hidden-a" href="#">메뉴1</a></li>
       <li class="bt-hidden-li"><a class="bt-hidden-a" href="#">메뉴1</a></li>
       <li class="bt-hidden-li"><a class="bt-hidden-a" href="#">메뉴1</a></li>
+      <li class="bt-hidden-li"><a class="bt-hidden-a" href="#">메뉴1</a></li>
+      <li class="bt-hidden-li"><a class="bt-hidden-a" href="#">메뉴1</a></li>
     </ul>
   </div>
   <div class="bt-hidden-search">
-  <form action="search.jsp" method="get">
+  <form action="searchsj.jsp" method="get">
     <input class="bt-search-bar" type="text" name="query"><br>
     </form>
     <div class="bt-hidden-tag-wrap">
@@ -63,8 +65,7 @@
     <ul class="bt-hidden-info-list">
       <li class="bt-hidden-info-li"><a class="bt-hidden-i" href="myinfo.jsp">내 정보 수정</a></li>
       <li class="bt-hidden-info-li"><a class="bt-hidden-i" href="logout.jsp">로그아웃</a></li>
-      <li class="bt-hidden-info-li"><a class="bt-hidden-i" href="#">마이메뉴1</a></li>
-      <li class="bt-hidden-info-li"><a class="bt-hidden-i" href="#">마이메뉴1</a></li>
+      
     </ul>
   </div>
 
