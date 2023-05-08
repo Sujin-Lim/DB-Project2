@@ -44,7 +44,7 @@
     <body class="main-body">
       <div class="header"></div>
       <div class="m-wrap">
-        <form action="search.jsp" method="get">
+        <form action="searchsj.jsp" method="get">
           <div class="m-search-wr">
             <table class="m-search-t">
               <tr>
