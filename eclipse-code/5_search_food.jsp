@@ -1,13 +1,5 @@
 
-
-<%-- main.jsp에서 입력받은 검색어를 통해 performance 테이블에 있는 데이터를 가져와서 화면에 보여줍니다. --%>
-
-
-<%@page import="java.sql.DriverManager" %> 
-<%@page import="java.sql.ResultSet" %> 
-<%@page import="java.sql.PreparedStatement" %>
-<%@page import="java.sql.Connection" %>
-<%@page import="java.sql.SQLException" %> 
+<%@page import="java.sql.*" %> 
 <%@page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
@@ -25,10 +17,10 @@
 <title>음식점 리스트</title>
 </head>
 <body>
-<center><h2>음식점 리스트</h2></center>
-<table style="width:800px;">
+<h2>음식점 리스트</h2>
+<table border="1">
 <tr>
-<th st>키</th>
+<th>키</th>
 <th>분류1</th>
 <th>분류2</th>
 <th>분류3</th>

@@ -1,5 +1,3 @@
-<%-- 메인 페이지 입니다. 검색창에서 검색어를 입력해 search.jsp로 넘깁니다. 개짜증난다 input type="text" 에 placeholder값 지우니 됐다 어이없다 진짜 챗지피티 죽여버려 --%>
-
 
   <%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
     <!DOCTYPE html>

@@ -21,8 +21,8 @@
   <div class="li-wrap">
     <div class="li-container">
       <div class="li-intro">
-        <h2> ㅡㅡ로그인 하세요</h2>
-        <b>로그인하여 취미생활을 즐겨보세요!</b>
+        <h2> 로그인 하세요 </h2>
+        <b>로그인하여 정보를 얻어가세요!</b>
       </div>
       <form action="loginCheck.jsp" method="post">
         <table class="li-input">
@@ -37,7 +37,7 @@
           </tr>
         </table>
         <div class="li-j">
-          <span>@@@에 처음이신가요?</span>
+          <span>처음이신가요?</span>
           <input class="li-join" type="button" value="가입하기" onclick="location.href='join.jsp'">
         </div>
       </form>

@@ -1,8 +1,4 @@
 
-
-<%-- main.jsp에서 입력받은 검색어를 통해 performance 테이블에 있는 데이터를 가져와서 화면에 보여줍니다. --%>
-
-
 <%@page import="java.sql.*" %> 
 <%@page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -21,8 +17,8 @@
 <title>서울 둘레길</title>
 </head>
 <body>
-<center><h2>서울 둘레길, 생태길 뭐 등등..</h2></center>
-<table style="width:800px;">
+<h2>서울 둘레길, 생태길 정보</h2>
+<table border="1">
 <tr>
 <th>자치구</th>
 <th style="width:200px;">코스레벨</th>

@@ -21,7 +21,7 @@
                 <div class=s-wrap>
                   <div class="s-performance">
                     <h1>공연 검색 결과</h1>
-                      <table width="800" border="1" align="center">
+                      <table border="1">
 <tr>
 <th>분류</th>
 <th>자치구</th>
@@ -97,7 +97,7 @@ try{
                   <div class="s-exercise">
                     <h1>운동 검색 결과</h1>
                     <div class="s-exercise-result">
-                      <table width="800" border="1" align="center">
+                      <table border="1">
                         <tr>
                           <th>시군구</th>
                           <th>시설명</th>
@@ -145,7 +145,7 @@ try{
                   <div class="s-book">
                     <h1>도서관 검색 결과</h1>
                     <div class="s-book-result">
-                      <table width="800" border="1" align="center">
+                      <table border="1">
 <tr>
 <th>도서관명</th>
 <th>구명</th>
@@ -201,7 +201,7 @@ try{
                   <div class="s-game">
                     <h1>게임 검색 결과</h1>
                     <div class="s-game-result">
-                      <table width="800" border="1" align="center">
+                      <table border="1">
                         <tr>
                           <th>게임장명</th>
                           <th>전화번호</th>
@@ -239,7 +239,7 @@ try{
                   <div class="s-food">
                     <h1>맛집 검색 결과</h1>
                     <div class="s-food-result">
-                      <table width="800" border="1" align="center">
+                      <table border="1">
                         <tr>
                           <th>키</th>
                           <th>분류1</th>
@@ -284,7 +284,7 @@ try{
                   <div class="s-walk">
                     <h1>둘레길 검색 결과</h1>
                     <div class="s-walk-result">
-                      <table width="800" border="1" align="center">
+                      <table border="1">
 <tr>
 <th>자치구</th>
 <th>코스레벨</th>

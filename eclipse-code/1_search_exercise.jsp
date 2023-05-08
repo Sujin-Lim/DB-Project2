@@ -1,12 +1,5 @@
 
-<%-- main.jsp에서 입력받은 검색어를 통해 performance 테이블에 있는 데이터를 가져와서 화면에 보여줍니다. --%>
-
-
-<%@page import="java.sql.DriverManager" %> 
-<%@page import="java.sql.ResultSet" %> 
-<%@page import="java.sql.PreparedStatement" %>
-<%@page import="java.sql.Connection" %>
-<%@page import="java.sql.SQLException" %> 
+<%@page import="java.sql.*" %> 
 <%@page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
@@ -25,8 +18,8 @@
 <title>공연 리스트</title>
 </head>
 <body>
-<center><h2>서울 공공 체육시설</h2></center>
-<table width="800" border="1" align="center">
+<h2>서울 공공 체육시설</h2>
+<table border="1">
 <tr>
 	<th>시군구</th>
 	<th>시설명</th>

@@ -1,8 +1,4 @@
 
-
-<%-- main.jsp에서 입력받은 검색어를 통해 performance 테이블에 있는 데이터를 가져와서 화면에 보여줍니다. --%>
-
-
 <%@page import="java.sql.*" %> 
 <%@page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -21,8 +17,8 @@
 <title>서울 둘레길</title>
 </head>
 <body>
-<center><h2>서울 도서관</h2></center>
-<table width="800" border="1" align="center">
+<h2>서울 도서관</h2>
+<table border="1">
 <tr>
 <th>도서관명</th>
 <th>구명</th>
