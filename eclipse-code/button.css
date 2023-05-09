@@ -1,4 +1,4 @@
-button css��
+button css��
 
 
 
@@ -8,7 +8,9 @@ button css��
    header: 70 ~ 245 
    footer: 249 ~ 259
    join: 262 ~ 279
-   main: 282 ~ 353 */
+   main: 282 ~ 353
+   더보기란 : 369 ~ 413
+    */
 
 
 /* login.jsp */
@@ -362,3 +364,50 @@ input[id="bt-h"] + label span {
    text-align: center;
    width: 33.33%;
 }
+
+
+/* moreYJ.js 더보기란 css */
+
+  .js-load {
+        display: none;
+    }
+    .js-load.active {
+        display: block;
+    }
+    .js-load:after {
+        display: none;
+    }
+    .btn-wrap {
+        display: block;
+    }
+    ul.menu table { list-style:none;  
+    position:relative;
+    float:left;
+    text-align:center;
+    width:calc(100%/3 - 12px); 
+    margin:12px 6px 0; }
+      
+    .more {
+    width:100%; 
+    line-height:30px; 
+    color:#72af2c;
+    font-size:18px;
+    font-weight:700;
+    text-align:center;
+    border:1px solid #72af2c;
+    border-radius:6px;
+    display:block;}
+
+    tr {
+    height: 47px;}
+    
+    .tb-1 {
+    width: 70px;}
+    .tb-2 {
+    width: 150px;}
+    .tb-3 {
+    width: 100px;}
+    .tb-4 {
+    width: 70px;}
+    .tb-5 {
+    width: 70px;}
