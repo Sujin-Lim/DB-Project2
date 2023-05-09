@@ -44,20 +44,14 @@
           <td><a href=""></a></td>
           </tr>
           <tr>
-          <td><a href="">
-          <img src="" alt="예제1"></a></td>
-          <td><img src="" alt="예제2"></td>
-          <td><img src="" alt="예제3"></td>
+          <td><a href=""><img src="img/food_1.png" alt="평양면옥"></a></td>
+          <td><a href=""><img src="img/food_2.png" alt="풍년갈비"></a></td>
+          <td><a href=""><img src="img/food_3.png" alt="예당"></a></td>
           </tr>
           <tr>
-          <td><a href=""></a></td>
-          <td><a href=""></a></td>
-          <td><a href=""></a></td>
-          </tr>
-          <tr>
-          <td><img src="" alt="예제4"></td>
-          <td><img src="" alt="예제5"></td>
-          <td><img src="" alt="예제6"></td>
+          <td><a href=""><img src="img/food_4.png" alt="송학"></a></td>
+          <td><a href=""><img src="img/food_5.png" alt="황소곱창"></a></td>
+          <td><a href=""><img src="img/food_6.png" alt="토담"></a></td>
           </tr>
           
           </table>

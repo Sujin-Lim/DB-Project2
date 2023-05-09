@@ -15,11 +15,38 @@
 <head>
 <meta charset="UTF-8">
 <title>서울 공공 체육시설</title>
-<title>공연 리스트</title>
+
+<style>
+  table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width:800px;
+    border-color: black;
+  }
+  
+  th {
+  	border: 1px solid black;
+  }
+  
+  tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-color: black;
+  }
+  
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-color: black;
+  }
+</style>
+
 </head>
 <body>
 <h2>서울 공공 체육시설</h2>
-<table border="1">
+
+
+<table>
 <tr>
 	<th>시군구</th>
 	<th>시설명</th>
@@ -33,7 +60,7 @@
 <%
 try{
 	Class.forName("oracle.jdbc.driver.OracleDriver"); //driver
-    conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "Button", "1234"); //username, password는 개인 Oracle 계정의 것으로 하면 됨
+    conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "button", "1234"); //username, password는 개인 Oracle 계정의 것으로 하면 됨
 
   
    // 모든 컬럼에서 데이터를 가져오도록 or로 연결함.
