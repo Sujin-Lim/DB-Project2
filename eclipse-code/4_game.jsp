@@ -40,24 +40,23 @@
           <table class="m-content-t">
           <tr>
           <td>한성 우리 게임장</td>
-          <td><a href="노리존 지도 링크">노원 노리존</a></td>
-          <td><a href="홍대 퍼니랜드">홍대 퍼니랜드</a></td>
+          <td>노원 노리존</td>
+          <td>홍대 퍼니랜드</td>
           </tr>
           <tr>
-          <td><a href="https://www.mfac.or.kr/performance/whole_view.jsp?sc_b_category=17&sc_b_code=BOARD_1207683401&pk_seq=2176&page=1">
-          <img src="https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=6a59720cd9c34bbfa056eb6b5031f809&thumb=Y" alt="예제1"></a></td>
-          <td><img src="https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=c694a4f0777040b994e88390c2b982b1&thumb=Y" alt="예제2"></td>
-          <td><img src="https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=9ed79127f4af4011934a1b4543a3ef65&thumb=Y" alt="예제3"></td>
+          <td><a href="https://naver.me/GXRWSXCP"><img src="img/game1.jpg" alt="우리게임장"></a></td>
+          <td><a href="https://naver.me/GUDeOxFy"><img src="img/game3.jpg" alt="노리존"></a></td>
+          <td><a href="https://naver.me/xNlcxzrP"><img src="img/game2-1.jpg" alt="퍼니랜드"></a></td>
           </tr>
           <tr>
-          <td><a href="http://www.gdfac.or.kr/web/lay2/program/S1T204C211/show/view.do?show_seq=1944&cpage=1&rows=999&keyword=&place=&start_dt=&end_dt=">삼성 코엑스 펀시티</a></td>
-          <td><a href="https://www.naruart.or.kr/bbs/board.php?bo_table=performance&wr_id=823&page=2">게임장5</a></td>
-          <td><a href="http://www.gbcf.or.kr/load.asp?subPage=110.view&cate=A&idx=148">게임장6</a></td>
+          <td>삼성 코엑스 펀시티</td>
+          <td>게임장5</td>
+          <td>게임장6</td>
           </tr>
           <tr>
-          <td><img src="https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=e9d8104ec63a4e2a87eb15b69d3b0bb8&thumb=Y" alt="예제4"></td>
-          <td><img src="https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=dd79fddeee47453aa1944653ee7c098f&thumb=Y" alt="예제5"></td>
-          <td><img src="https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=de15e7f858704a77bf1a9eadf735767a&thumb=Y" alt="예제6"></td>
+          <td><a href="https://naver.me/FOhIfxDx"><img src="img/game4.PNG" alt="펀시티"></a></td>
+          <td><a href=""><img src="img/game3.jpg" alt="게임장5"></a></td>
+          <td><a href=""><img src="img/game3.jpg" alt="게임장6"></a></td>
           </tr>
           
           </table>

@@ -142,21 +142,22 @@ input[id="bt-h"] + label span {
 .bt-hidden-menu {
   background-color: black;
   display: none;
-  top: 70px;
+  top: 60px;
   position: fixed;
   width: 150px;
   height: 250px;
   justify-content: center;
-  z-index: 9998;
-  opacity: 0.6;
+  z-index: 9999;
+  opacity: 0.8;
   line-height: 2;
 }
 
 
 
 .bt-myinfo-btn {
-   position: absolute;
-   margin-left: 25%;
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 1.5%;
   color: black;
   background-color: white;
   border-style: none;
@@ -171,7 +172,8 @@ input[id="bt-h"] + label span {
 }
 
 .bt-search-icon {
-   margin-left: 30%;
+  margin-left: 54%;
+  margin-top: 1%;
   position: absolute;
   width: 40px;
 }
@@ -183,7 +185,7 @@ input[id="bt-h"] + label span {
   position: absolute;
   display: none;
   top: 60px;
-  z-index: 9999;
+  z-index: 9998;
   padding-top: 5px;
   justify-content: center;
   overflow:hidden;
@@ -225,28 +227,31 @@ input[id="bt-h"] + label span {
 
 .bt-hidden-info-li {
   float: none;
-  font-size: 13px;
+  font-size: 13.5px;
   font-weight: bold;
   list-style: none;
+  white-space: nowrap;
+  
 }
 .bt-hidden-i {
   color: orange;
   text-decoration: none;
 }
 .bt-hidden-info {
-  top: 250px;
-  background-color: white;
+  top: 60px;
+  left: -40px;
+  background-color: gray;
+  opacity: 0.8;
   display: none;
   position: fixed;
   width: 100px;
-  height: 120px;
+  height: 75px;
   padding-top: 5px;
   z-index: 9998;
   margin: 0;
 }
 
 .bt-hidden-info {
-  position: absolute;
   margin-left: 90%;
 }
 
