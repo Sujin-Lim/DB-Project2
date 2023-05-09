@@ -1,0 +1,152 @@
+[cmd]
+sqlplus
+system
+1234
+create user Button identified by 1234;
+grant connect, resource, dba to Button;
+commit;
+
+[sql developer]
+새 접속 생성
+Name: Button
+사용자 이름: Button
+비밀번호: 1234
+
+create table member (
+custid varchar2(10) primary key,
+custpw varchar2(10),
+custname varchar2(10),
+custphone number(10),
+custadd varchar2(30));
+
+create table exercise (
+시군구 varchar2(20),
+시설명 varchar2(70),
+소유기관 varchar2(50),
+관리주체 varchar2(100),
+바닥재료 varchar2(50),
+좌석수 varchar2(50),
+수용인원 varchar2(50),
+준공연도 varchar2(50)
+);
+
+create table book1(
+도서관명 varchar2(100),
+구명 varchar2(20),
+주소 varchar2(200),
+전화번호 varchar2(50),
+홈페이지 varchar2(800),
+운영시간 varchar2(300),
+정기휴관일 varchar2(200),
+도서관구분명 varchar2(50)
+);
+
+create table book2(
+도서관명 varchar2(100),
+구명 varchar2(20),
+주소 varchar2(200),
+전화번호 varchar2(50),
+홈페이지 varchar2(800),
+운영시간 varchar2(300),
+정기휴관일 varchar2(200),
+도서관구분명 varchar2(50)
+);
+
+create view book as
+select 도서관명, 구명, 주소, 전화번호, 홈페이지, 운영시간, 정기휴관일, 도서관구분명
+from book1
+union all
+select 도서관명, 구명, 주소, 전화번호, 홈페이지, 운영시간, 정기휴관일, 도서관구분명
+from book2;
+
+create table performance (
+분류 VARCHAR2(20),
+자치구 VARCHAR2(20),
+공연행사명 VARCHAR2(300),
+날짜 VARCHAR2(50),
+장소 VARCHAR2(500),
+기관명 VARCHAR2(150),
+이용대상 VARCHAR2(300),
+이용요금 VARCHAR2(800),
+출연자정보 VARCHAR2(2000),
+프로그램소개 VARCHAR2(1500),
+홈페이지주소 VARCHAR2(1500),
+시작일 DATE,
+종료일 DATE
+);
+
+CREATE TABLE game (
+게임장명 VARCHAR2(300),
+지번주소 VARCHAR2(1000),
+도로명주소 VARCHAR2(1000),
+전화번호 VARCHAR2(26),
+취급게임 VARCHAR2(500),
+등급 VARCHAR2(26)
+);
+
+create table food(
+키 varchar2(26),
+분류1 varchar2(26),
+분류2 varchar2(26),
+분류3 varchar2(26),
+검색어 varchar2(40),
+명칭 varchar2(40),
+행정시 varchar2(26),
+행정구 varchar2(26),
+행정동 varchar2(26)
+);
+
+create table trek_hangang(
+자치구 varchar2(100),
+코스레벨 varchar2(10),
+코스대분류 varchar2(50),
+코스명 varchar2(500),
+상세코스 varchar2(500),
+설명 varchar2(1500),
+거리 varchar2(30),
+소요시간 varchar2(50),
+교통편 varchar2(800),
+연계지하철역 varchar2(50),
+연계코스 varchar2(30),
+관련파일 varchar2(500));
+
+create table trek_dulle(
+자치구 varchar2(100),
+코스레벨 varchar2(10),
+코스대분류 varchar2(50),
+코스명 varchar2(500),
+상세코스 varchar2(500),
+설명 varchar2(4000),
+거리 varchar2(30),
+소요시간 varchar2(50),
+교통편 varchar2(800),
+연계지하철역 varchar2(50),
+연계코스 varchar2(30),
+관련파일 varchar2(500));
+
+create table trek_eco(
+자치구 varchar2(100),
+코스레벨 varchar2(10),
+코스대분류 varchar2(50),
+코스명 varchar2(500),
+상세코스 varchar2(500),
+설명 varchar2(4000),
+거리 varchar2(30),
+소요시간 varchar2(50),
+교통편 varchar2(800),
+연계지하철역 varchar2(50),
+연계코스 varchar2(30),
+관련파일 varchar2(500));
+
+CREATE VIEW trek as
+SELECT 자치구, 코스레벨, 코스대분류, 코스명, 상세코스, 설명, 거리, 소요시간, 교통편, 연계지하철역, 연계코스, 관련파일
+FROM trek_hangang
+UNION ALL
+SELECT 자치구, 코스레벨, 코스대분류, 코스명, 상세코스, 설명, 거리, 소요시간, 교통편, 연계지하철역, 연계코스, 관련파일
+FROM trek_dulle
+UNION ALL
+SELECT 자치구, 코스레벨, 코스대분류, 코스명, 상세코스, 설명, 거리, 소요시간, 교통편, 연계지하철역, 연계코스, 관련파일
+FROM trek_eco;
+
+
+
