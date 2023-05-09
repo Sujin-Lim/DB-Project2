@@ -34,12 +34,12 @@
   </div>
   <div class="bt-hidden-menu">
     <ul class="bt-hidden">
-      <li class="bt-hidden-li"><a class="bt-hidden-a" href="#">메뉴1</a></li>
-      <li class="bt-hidden-li"><a class="bt-hidden-a" href="#">메뉴1</a></li>
-      <li class="bt-hidden-li"><a class="bt-hidden-a" href="#">메뉴1</a></li>
-      <li class="bt-hidden-li"><a class="bt-hidden-a" href="#">메뉴1</a></li>
-      <li class="bt-hidden-li"><a class="bt-hidden-a" href="#">메뉴1</a></li>
-      <li class="bt-hidden-li"><a class="bt-hidden-a" href="#">메뉴1</a></li>
+      <li class="bt-hidden-li"><a class="bt-hidden-a" href="1_exercise.jsp">운동</a></li>
+      <li class="bt-hidden-li"><a class="bt-hidden-a" href="2_book.jsp">도서관</a></li>
+      <li class="bt-hidden-li"><a class="bt-hidden-a" href="3_performance.jsp">공연</a></li>
+      <li class="bt-hidden-li"><a class="bt-hidden-a" href="4_game.jsp">게임장</a></li>
+      <li class="bt-hidden-li"><a class="bt-hidden-a" href="5_food.jsp">맛집</a></li>
+      <li class="bt-hidden-li"><a class="bt-hidden-a" href="6_trek.jsp">산책로</a></li>
     </ul>
   </div>
   <div class="bt-hidden-search">

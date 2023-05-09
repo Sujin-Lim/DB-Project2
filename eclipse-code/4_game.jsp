@@ -39,9 +39,9 @@
           <div class="m-content">
           <table class="m-content-t">
           <tr>
-          <td> M 아티스트 2023 김도현 피아노 리사이틀 II</td>
-          <td><a href="http://www.gdfac.or.kr/web/lay2/program/S1T204C211/show/view.do?show_seq=1925&cpage=2&rows=10&keyword=&place=&start_dt=&end_dt=">Dear Next Generation, 유다빈밴드(YUDABINBAND)</a></td>
-          <td><a href="http://www.gdfac.or.kr/web/lay2/program/S1T204C211/show/view.do?show_seq=1924&cpage=1&rows=10&keyword=&place=&start_dt=&end_dt=">Dear Next Generation, 라쿠나(LACUNA)</a></td>
+          <td>한성 우리 게임장</td>
+          <td><a href="노리존 지도 링크">노원 노리존</a></td>
+          <td><a href="홍대 퍼니랜드">홍대 퍼니랜드</a></td>
           </tr>
           <tr>
           <td><a href="https://www.mfac.or.kr/performance/whole_view.jsp?sc_b_category=17&sc_b_code=BOARD_1207683401&pk_seq=2176&page=1">
@@ -50,9 +50,9 @@
           <td><img src="https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=9ed79127f4af4011934a1b4543a3ef65&thumb=Y" alt="예제3"></td>
           </tr>
           <tr>
-          <td><a href="http://www.gdfac.or.kr/web/lay2/program/S1T204C211/show/view.do?show_seq=1944&cpage=1&rows=999&keyword=&place=&start_dt=&end_dt=">6월 한밤의 공연 산책 [만보와 별별머리]</a></td>
-          <td><a href="https://www.naruart.or.kr/bbs/board.php?bo_table=performance&wr_id=823&page=2">2023 [나루 뮤지컬 나잇]</a></td>
-          <td><a href="http://www.gbcf.or.kr/load.asp?subPage=110.view&cate=A&idx=148">송대관 콘서트</a></td>
+          <td><a href="http://www.gdfac.or.kr/web/lay2/program/S1T204C211/show/view.do?show_seq=1944&cpage=1&rows=999&keyword=&place=&start_dt=&end_dt=">삼성 코엑스 펀시티</a></td>
+          <td><a href="https://www.naruart.or.kr/bbs/board.php?bo_table=performance&wr_id=823&page=2">게임장5</a></td>
+          <td><a href="http://www.gbcf.or.kr/load.asp?subPage=110.view&cate=A&idx=148">게임장6</a></td>
           </tr>
           <tr>
           <td><img src="https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=e9d8104ec63a4e2a87eb15b69d3b0bb8&thumb=Y" alt="예제4"></td>

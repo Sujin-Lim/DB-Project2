@@ -1,9 +1,14 @@
+button css¿¡
+
+
+
+
 
 /*  login: 8 ~ 66 
-	header: 70 ~ 245 
-	footer: 249 ~ 259
-	join: 262 ~ 279
-	main: 282 ~ 353 */
+   header: 70 ~ 245 
+   footer: 249 ~ 259
+   join: 262 ~ 279
+   main: 282 ~ 353 */
 
 
 /* login.jsp */
@@ -128,31 +133,30 @@ input[id="bt-h"] + label span {
 
 .bt-hidden-a {
   float: none;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   text-decoration: none;
-  list-style: none;
+  list-style: gray;
   color: white;
 }
-
 .bt-hidden-menu {
-  height: 270px;
   background-color: black;
   display: none;
-  top: 250px;
+  top: 70px;
   position: fixed;
-  width: 300px;
-  height: 400px;
-  padding-top: 5px;
+  width: 150px;
+  height: 250px;
   justify-content: center;
   z-index: 9998;
+  opacity: 0.6;
+  line-height: 2;
 }
 
 
 
 .bt-myinfo-btn {
-	position: absolute;
-	margin-left: 25%;
+   position: absolute;
+   margin-left: 25%;
   color: black;
   background-color: white;
   border-style: none;
@@ -167,7 +171,7 @@ input[id="bt-h"] + label span {
 }
 
 .bt-search-icon {
-	margin-left: 30%;
+   margin-left: 30%;
   position: absolute;
   width: 40px;
 }
@@ -179,10 +183,10 @@ input[id="bt-h"] + label span {
   position: absolute;
   display: none;
   top: 60px;
-  z-index: 5;
+  z-index: 9999;
   padding-top: 5px;
   justify-content: center;
-  	overflow:hidden;
+  overflow:hidden;
 }
 
 .bt-hidden-tag-wrap {
@@ -247,10 +251,10 @@ input[id="bt-h"] + label span {
 }
 
 .logo {
-	overflow: hidden;
-	position: relative;
-	width:400px;
-	margin-left:600px;
+   overflow: hidden;
+   position: relative;
+   width:400px;
+   margin-left:600px;
 }
 
 /* footer.jsp */
@@ -272,8 +276,8 @@ input[id="bt-h"] + label span {
   padding: 0;
 }
 .jo-content {
-	overflow: hidden;
-	position: relative;
+   overflow: hidden;
+   position: relative;
   width: 1080px;
   height: 800px;
   margin: 0 auto;
@@ -320,41 +324,41 @@ input[id="bt-h"] + label span {
 }
 
 .m-content {
-	width: 1080px;
-	margin-top: 50px;
+   width: 1080px;
+   margin-top: 50px;
 }
 
 .m-content-t {
-	width: 100%;
-	border-spacing: 40px;
+   width: 100%;
+   border-spacing: 40px;
 }
 
 
 .m-content-t img {
-	width: 300px;
+   width: 300px;
 }
 .m-content-t td {
-	text-align: center;
-	width: 33.33%;
+   text-align: center;
+   width: 33.33%;
 }
 
 .m-content-t td a {
-	text-decoration: none;
-	color: black;
-	font-size: 15px;
+   text-decoration: none;
+   color: black;
+   font-size: 15px;
 }
 
 .m-sub {
-	margin-top: 10px;
+   margin-top: 10px;
 }
 .m-sub-t img {
-	width: 150px;
+   width: 150px;
 }
 .m-sub-t {
-	width: 100%;
-	border-spacing: 100px;
+   width: 100%;
+   border-spacing: 100px;
 }
 .m-sub-t td {
-	text-align: center;
-	width: 33.33%;
+   text-align: center;
+   width: 33.33%;
 }
