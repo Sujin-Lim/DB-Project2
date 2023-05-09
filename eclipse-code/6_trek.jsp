@@ -36,6 +36,16 @@
                 <td><input class="m-search-bar" type="text" name="query"></td>
                 <td><input class="m-search-bt" type="submit" value="검색"></td>
                 </tr>
+                <tr>
+          			<td><a href=""><img src="img/trek_1.png" alt=""></a></td>
+       			    <td><a href=""><img src="img/trek_2.png" alt=""></a></td>
+       		        <td><a href=""><img src="img/trek_3.png" alt=""></a></td>
+       		   </tr>
+          		<tr>
+          			<td><a href=""><img src="img/trek_4.png" alt=""></a></td>
+          			<td><a href=""><img src="img/trek_5.png" alt=""></a></td>
+          			<td><a href=""><img src="img/trek_6.png" alt=""></a></td>
+          		</tr>
                 </table>
           </div>
           <div class="m-content" style="display:flex; justify-content: center; align-items: center; ">

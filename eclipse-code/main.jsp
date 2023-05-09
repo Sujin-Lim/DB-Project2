@@ -58,7 +58,7 @@
               <table class="m-sub-t">
                 <tr>
                   <td><a href="exercise.jsp"><img src="img/exercise.png" alt="운동"></a></td>
-                  <td><a href="performance.jsp"><img src="img/painting.png" alt="공연"></a></td>
+                  <td><a href="3_performance.jsp"><img src="img/painting.png" alt="공연"></a></td>
                   <td><a href="book"><img src="img/movie.png" alt="영화"></a></td>
                 </tr>
                 <tr>

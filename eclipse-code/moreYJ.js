@@ -1,10 +1,3 @@
-
-/**
- *
- *
- */
-
-
  $(window).on('load', function () {
             load('#js-load', '3');
         
