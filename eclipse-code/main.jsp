@@ -1,4 +1,4 @@
-<%@ page import="java.sql.*"%>
+	<%@ page import="java.sql.*"%>
 <%@ page import="javax.servlet.http.*,java.io.*,java.util.*"%>
 
 <%-- 메인 페이지 입니다. 검색창에서 검색어를 입력해 search.jsp로 넘깁니다.--%>

@@ -1,412 +1,428 @@
-
-
-/*  login: 
+x /*  login: 
    header:
    footer: 
    join: 
    main: 
-   더보기란 :  */
-
-
-/* login.jsp */
+   �뜑蹂닿린�� :  */
+	/* login.jsp */ 
 
 .li-wrap {
-  width: 100%;
-  margin-top: 0;
+	width: 100%;
+	margin-top: 0;
 }
 
 .li-container {
-  position: absolute;
-  left: 35%;
-  top: 15%;
+	position: absolute;
+	left: 35%;
+	top: 15%;
 }
 
 .li-intro {
-  margin-left: 20px;
-  margin-bottom: 100px;
+	margin-left: 20px;
+	margin-bottom: 100px;
 }
 
 .li-input {
-  margin-top: 30px;
+	margin-top: 30px;
 }
 
-.li-id,
-.li-pw {
-  width: 500px;
-  height: 50px;
-  font-size: 20px;
-  background-color: #e7e4e4;
-  border-style: none;
-  margin-bottom: 20px;
+.li-id, .li-pw {
+	width: 500px;
+	height: 50px;
+	font-size: 20px;
+	background-color: #e7e4e4;
+	border-style: none;
+	margin-bottom: 20px;
 }
 
-.li-id::placeholder,
-.li-pw::placeholder {
-  color: #cecece;
-  padding-left: 50px;
+.li-id::placeholder, .li-pw::placeholder {
+	color: #cecece;
+	padding-left: 50px;
 }
 
 .li-login {
-  width: 500px;
-  height: 50px;
-  margin-top: 20px;
-  background-color: #b1b1b1;
-  font-size: 20px;
-  border-style: none;
-  color: #ffffff;
-  cursor: pointer;
+	width: 500px;
+	height: 50px;
+	margin-top: 20px;
+	background-color: #b1b1b1;
+	font-size: 20px;
+	border-style: none;
+	color: #ffffff;
+	cursor: pointer;
 }
 
 .li-j {
-  margin-top: 10%;
+	margin-top: 10%;
 }
 
 .li-join {
-  border-style: none;
-  background-color: none;
-  color: black;
-  background-color: white;
-  font-weight: bold;
-  font-size: 15px;
+	border-style: none;
+	background-color: none;
+	color: black;
+	background-color: white;
+	font-weight: bold;
+	font-size: 15px;
 }
 
-
 /* header.jsp */
-
-
 .bt-body {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .bt-header {
-  background-color: white;
-  width: 100%;
-  height: 250px;
-  position: fixed;
-  top: 0;
-  display: flex;
-  z-index: 5000;
+	background-color: white;
+	width: 100%;
+	height: 250px;
+	position: fixed;
+	top: 0;
+	display: flex;
+	z-index: 5000;
 }
 
 .bt-menu {
-  position: absolute;
-  top: 20px;
-  left: 1%;
+	position: absolute;
+	top: 20px;
+	left: 1%;
 }
 
 #bt-h {
-  display: none;
+	display: none;
 }
 
-#bt-h + label {
-  display: block;
-  width: 50px;
-  height: 30px;
-  position: relative;
-  cursor: pointer;
+#bt-h+label {
+	display: block;
+	width: 50px;
+	height: 30px;
+	position: relative;
+	cursor: pointer;
 }
 
-input[id="bt-h"] + label span {
-  display: block;
-  position: absolute;
-  width: 70%;
-  height: 5px;
-  border-radius: 30px;
-  background: #000;
+input[id="bt-h"]+label span {
+	display: block;
+	position: absolute;
+	width: 70%;
+	height: 5px;
+	border-radius: 30px;
+	background: #000;
 }
 
 .bt-h1 {
-  top: 0;
+	top: 0;
 }
 
 .bt-h2 {
-  top: 45%;
+	top: 45%;
 }
 
 .bt-h3 {
-  bottom: 0;
+	bottom: 0;
 }
 
 .bt-hidden-a {
-  float: none;
-  font-size: 18px;
-  font-weight: bold;
-  text-decoration: none;
-  list-style: gray;
-  color: white;
+	float: none;
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+	list-style: gray;
+	color: white;
 }
+
 .bt-hidden-menu {
-  background-color: black;
-  display: none;
-  top: 60px;
-  position: fixed;
-  width: 150px;
-  height: 250px;
-  justify-content: center;
-  z-index: 9999;
-  opacity: 0.8;
-  line-height: 2;
+	background-color: black;
+	display: none;
+	top: 60px;
+	position: fixed;
+	width: 150px;
+	height: 250px;
+	justify-content: center;
+	z-index: 9999;
+	opacity: 0.8;
+	line-height: 2;
 }
-
-
 
 .bt-myinfo-btn {
-  position: absolute;
-  margin-left: 50%;
-  margin-top: 1.5%;
-  color: black;
-  background-color: white;
-  border-style: none;
-  cursor: pointer;
+	position: absolute;
+	margin-left: 85%;
+	margin-top: 1.5%;
+	color: black;
+	background-color: white;
+	border-style: none;
+	cursor: pointer;
 }
 
 .bt-search {
-  position: absolute;
-  margin-top: 15px;
-  margin-left: 95%;
-  cursor: pointer;
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 95%;
+	cursor: pointer;
+	z-index:5000;
+
 }
 
 .bt-search-icon {
-  margin-left: 54%;
-  margin-top: 1%;
-  position: absolute;
-  width: 40px;
+	margin-left: 89%;
+	margin-top: 0.7%;
+	position: absolute;
+	width: 40px;
 }
 
 .bt-hidden-search {
-  width: 100vw;
-  height: 320px;
-  background-color: rgb(36, 91, 209);
-  position: absolute;
-  display: none;
-  top: 60px;
-  z-index: 9998;
-  padding-top: 5px;
-  justify-content: center;
-  overflow:hidden;
+	width: 100vw;
+	height: 320px;
+	background-color: rgb(36, 91, 209);
+	position: absolute;
+	display: none;
+	top: 60px;
+	z-index: 5000;
+	padding-top: 5px;
+	justify-content: center;
+	overflow: hidden;
 }
 
 .bt-hidden-tag-wrap {
-  margin-top: 30px;
-  margin-left: 29%;
+	margin-top: 30px;
+	margin-left: 29%;
 }
 
 .bt-search-bar {
-  margin-left: 30%;
-  width: 700px;
-  height: 50px;
-  margin-top: 50px;
-  font-size: 30px;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
-  border-bottom: 2px solid black;
+	margin-left: 30%;
+	width: 700px;
+	height: 50px;
+	margin-top: 50px;
+	font-size: 30px;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	border-bottom: 2px solid black;
 }
 
 .bt-search-bar:focus {
-  outline: none;
+	outline: none;
 }
 
 .bt-tag {
-  display: inline;
-  margin-left: 30px;
+	display: inline;
+	margin-left: 30px;
 }
 
 .bt-search-tag {
-  text-decoration: underline;
-  color: white;
+	text-decoration: underline;
+	color: white;
 }
+
 .bt-hidden-info-list {
-  padding-left: 10px;
+	padding-left: 10px;
 }
 
 .bt-hidden-info-li {
-  float: none;
-  font-size: 13.5px;
-  font-weight: bold;
-  list-style: none;
-  white-space: nowrap;
-  
+	float: none;
+	font-size: 13.5px;
+	font-weight: bold;
+	list-style: none;
+	white-space: nowrap;
 }
+
 .bt-hidden-i {
-  color: orange;
-  text-decoration: none;
-}
-.bt-hidden-info {
-  top: 60px;
-  left: -40px;
-  background-color: gray;
-  opacity: 0.8;
-  display: none;
-  position: fixed;
-  width: 100px;
-  height: 75px;
-  padding-top: 5px;
-  z-index: 9998;
-  margin: 0;
+	color: orange;
+	text-decoration: none;
 }
 
 .bt-hidden-info {
-  margin-left: 90%;
+	top: 60px;
+	left: -100px;
+	background-color: gray;
+	opacity: 0.8;
+	display: none;
+	position: fixed;
+	width: 100px;
+	height: 75px;
+	padding-top: 5px;
+	z-index: 9998;
+	margin: 0;
+}
+
+.bt-hidden-info {
+	margin-left: 90%;
 }
 
 .logo {
-   overflow: hidden;
-   position: relative;
-   width:400px;
-   margin-left:600px;
+	overflow: hidden;
+	position: absolute;
+	width: 20%;
+	height: auto;
+	top: 100px;
+	left: 650px;
+	z-index: 10000;
 }
 
-/* footer.jsp */
 
+/* footer.jsp */
 .ft-wrap {
-  width: 100%;
-  height: 80px;
-  background-color: white;
-  position: absolute;
-  bottom: auto;
-  text-align: center;
-  padding-bottom: 10px;
+	width: 100%;
+	height: 80px;
+	background-color: white;
+	position: absolute;
+	bottom: auto;
+	text-align: center;
+	padding-bottom: 10px;
 }
 
 /* join.jsp */
-
 .jo-wrap {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
+
 .jo-content {
-   overflow: hidden;
-   position: relative;
-  width: 1080px;
-  height: 800px;
-  margin: 0 auto;
-  background: orange;
-  margin-top: 250px;
-  padding-left: 200px;
-  padding-top: 100px;
+	overflow: hidden;
+	position: relative;
+	width: 1080px;
+	height: 800px;
+	margin: 0 auto;
+	background: orange;
+	margin-top: 250px;
+	padding-left: 200px;
+	padding-top: 100px;
 }
+
 .jo-table {
-  margin-left: 10%;
+	margin-left: 10%;
 }
 
 /* main.jsp */
-
 .main-body {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .m-wrap {
-  width: 1080px;
-  margin: 0 auto;
-  margin-top: 250px;
-  margin-bottom: 100px;
+	width: 1080px;
+	margin: 0 auto;
+	margin-top: 250px;
+	margin-bottom: 100px;
 }
 
 .m-search-wr {
-  margin-top: 200px;
-  margin-left: 270px;
+	margin-top: 200px;
+	margin-left: 270px;
 }
 
 .m-search-bar {
-  width: 500px;
-  height: 50px;
-  font-size: 30px;
+	width: 500px;
+	height: 50px;
+	font-size: 30px;
 }
 
 .m-search-bt {
-  width: 50px;
-  height: 50px;
-  border: none;
-  background-color: white;
-  font-size: 20px;
+	width: 50px;
+	height: 50px;
+	border: none;
+	background-color: white;
+	font-size: 20px;
 }
 
 .m-content {
-   width: 1080px;
-   margin-top: 50px;
+	width: 1080px;
+	margin-top: 50px;
 }
 
 .m-content-t {
-   width: 100%;
-   border-spacing: 40px;
+	width: 100%;
+	border-spacing: 40px;
 }
-
 
 .m-content-t img {
-   width: 300px;
+	width: 300px;
 }
+
 .m-content-t td {
-   text-align: center;
-   width: 33.33%;
+	text-align: center;
+	width: 33.33%;
 }
 
 .m-content-t td a {
-   text-decoration: none;
-   color: black;
-   font-size: 15px;
+	text-decoration: none;
+	color: black;
+	font-size: 15px;
 }
 
 .m-sub {
-   margin-top: 10px;
+	margin-top: 10px;
 }
+
 .m-sub-t img {
-   width: 150px;
+	width: 150px;
 }
+
 .m-sub-t {
-   width: 100%;
-   border-spacing: 100px;
+	width: 100%;
+	border-spacing: 100px;
 }
+
 .m-sub-t td {
-   text-align: center;
-   width: 33.33%;
+	text-align: center;
+	width: 33.33%;
 }
 
-/* moreYJ.js 더보기란 css */
+/* moreYJ.js �뜑蹂닿린�� css */
+.js-load {
+	display: none;
+}
 
-  .js-load {
-        display: none;
-    }
-    .js-load.active {
-        display: block;
-    }
-    .js-load:after {
-        display: none;
-    }
-    .btn-wrap {
-        display: block;
-    }
-    ul.menu table { list-style:none;  
-    position:relative;
-    float:left;
-    text-align:center;
-    width:calc(100%/3 - 12px); 
-    margin:12px 6px 0; }
-      
-    .more {
-    width:100%; 
-    line-height:30px; 
-    color:#72af2c;
-    font-size:18px;
-    font-weight:700;
-    text-align:center;
-    border:1px solid #72af2c;
-    border-radius:6px;
-    display:block;}
+.js-load.active {
+	display: block;
+}
 
-    tr {
-    height: 47px;}
-    
-    .tb-1 {
-    width: 70px;}
-    .tb-2 {
-    width: 150px;}
-    .tb-3 {
-    width: 100px;}
-    .tb-4 {
-    width: 70px;}
-    .tb-5 {
-    width: 70px;}
+.js-load:after {
+	display: none;
+}
+
+.btn-wrap {
+	display: block;
+}
+
+ul.menu table {
+	list-style: none;
+	position: relative;
+	float: left;
+	text-align: center;
+	width: calc(100%/ 3 - 12px);
+	margin: 12px 6px 0;
+}
+
+.more {
+	width: 100%;
+	line-height: 30px;
+	color: #72af2c;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+	border: 1px solid #72af2c;
+	border-radius: 6px;
+	display: block;
+}
+
+tr {
+	height: 47px;
+}
+
+.tb-1 {
+	width: 70px;
+}
+
+.tb-2 {
+	width: 150px;
+}
+
+.tb-3 {
+	width: 100px;
+}
+
+.tb-4 {
+	width: 70px;
+}
+
+.tb-5 {
+	width: 70px;
+}
