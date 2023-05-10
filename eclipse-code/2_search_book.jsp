@@ -15,6 +15,32 @@
 <head>
 <meta charset="UTF-8">
 <title>서울의 도서관</title>
+
+<style>
+  table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width:800px;
+    border-color: black;
+  }
+  
+  th {
+  	border: 1px solid black;
+  }
+  
+  tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-color: black;
+  }
+  
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-color: black;
+  }
+</style>
+
 </head>
 <body>
 <h2>서울의 도서관</h2>

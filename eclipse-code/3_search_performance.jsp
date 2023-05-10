@@ -15,6 +15,32 @@
 <meta charset="UTF-8">
 <title>공연 리스트</title>
 
+<style>
+  table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width:800px;
+    border-color: black;
+  }
+  
+  th {
+  	border: 1px solid black;
+  }
+  
+  tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-color: black;
+  }
+  
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-color: black;
+  }
+</style>
+
+
 <!-- 더보기란 js파일임. 지우면 작동안할수도 -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 <link rel="stylesheet" href="button.css">
