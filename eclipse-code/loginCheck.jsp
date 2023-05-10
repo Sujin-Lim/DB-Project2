@@ -19,7 +19,7 @@
     
     try {
         Class.forName("oracle.jdbc.driver.OracleDriver");
-        conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.0.23:1521:xe", "button", "1234");
+        conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "button", "1234");
         
         String sql = "SELECT COUNT(*) AS cnt FROM member WHERE custid = ? AND custpw = ?";
         pstmt = conn.prepareStatement(sql);

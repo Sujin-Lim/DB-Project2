@@ -44,6 +44,9 @@
     <body class="main-body">
       <div class="header"></div>
       <div class="m-wrap">
+      <div class="m-logo">
+      <img src="img/logo.png" alt="로고">
+      </div>
         <form action="search.jsp" method="get">
           <div class="m-search-wr">
             <table class="m-search-t">
@@ -57,14 +60,14 @@
             <div class="m-sub">
               <table class="m-sub-t">
                 <tr>
-                  <td><a href="exercise.jsp"><img src="img/exercise.png" alt="운동"></a></td>
-                  <td><a href="3_performance.jsp"><img src="img/painting.png" alt="공연"></a></td>
-                  <td><a href="book"><img src="img/movie.png" alt="영화"></a></td>
+                  <td><a href="1_exercise.jsp"><img src="img/운동.png" alt="운동"></a></td>
+                  <td><a href="2_book.jsp"><img src="img/도서관.png" alt="도서관"></a></td>
+                  <td><a href="3_performance.jsp"><img src="img/공연.png" alt="공연"></a></td>
                 </tr>
                 <tr>
-                  <td><a href="game"><img src="img/game.png" alt="게임"></a></td>
-                  <td><a href="food"><img src="img/book.png" alt="책"></a></td>
-                  <td><a href="walk"><img src="img/ball.png" alt="운동장"></a></td>
+                  <td><a href="4_game.jsp"><img src="img/게임기.png" alt="게임"></a></td>
+                  <td><a href="5_food.jsp"><img src="img/음식.png" alt="음식"></a></td>
+                  <td><a href="6_trek.jsp"><img src="img/산책.png" alt="둘레길"></a></td>
                 </tr>
               </table>
 

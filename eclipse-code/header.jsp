@@ -27,19 +27,19 @@
           </label>
         </div>
       </div>
-      <img class="logo" src="img/logo.png" alt="로고">
         <input class="bt-myinfo-btn" type="button" value="내 정보">
         <img class="bt-search-icon" src="img/search.png" alt="검색">
     </div>
   </div>
   <div class="bt-hidden-menu">
     <ul class="bt-hidden">
-      <li class="bt-hidden-li"><a class="bt-hidden-a" href="#">메뉴1</a></li>
-      <li class="bt-hidden-li"><a class="bt-hidden-a" href="#">메뉴1</a></li>
-      <li class="bt-hidden-li"><a class="bt-hidden-a" href="#">메뉴1</a></li>
-      <li class="bt-hidden-li"><a class="bt-hidden-a" href="#">메뉴1</a></li>
-      <li class="bt-hidden-li"><a class="bt-hidden-a" href="#">메뉴1</a></li>
-      <li class="bt-hidden-li"><a class="bt-hidden-a" href="#">메뉴1</a></li>
+      <li class="bt-hidden-li"><a class="bt-hidden-a" href="main.jsp">메인</a><li>
+      <li class="bt-hidden-li"><a class="bt-hidden-a" href="1_exercise.jsp">운동</a></li>
+      <li class="bt-hidden-li"><a class="bt-hidden-a" href="2_book.jsp">도서관</a></li>
+      <li class="bt-hidden-li"><a class="bt-hidden-a" href="3_performance.jsp">문화생활</a></li>
+      <li class="bt-hidden-li"><a class="bt-hidden-a" href="4_game.jsp">게임장</a></li>
+      <li class="bt-hidden-li"><a class="bt-hidden-a" href="5_food.jsp">음식점</a></li>
+      <li class="bt-hidden-li"><a class="bt-hidden-a" href="6_trek.jsp">둘레길</a></li>
     </ul>
   </div>
   <div class="bt-hidden-search">
@@ -47,15 +47,14 @@
     <input class="bt-search-bar" type="text" name="query">
     </form>
     <div class="bt-hidden-tag-wrap">
-      <div class="bt-tag"><a class="bt-search-tag"> #검색어 추천 1</a></div>
-      <div class="bt-tag"><a class="bt-search-tag"> #검색어 추천 2</a></div>
-      <div class="bt-tag"><a class="bt-search-tag"> #검색어 추천 3</a></div>
-      <div class="bt-tag"><a class="bt-search-tag"> #검색어 추천 4</a></div>
-      <div class="bt-tag"><a class="bt-search-tag"> #검색어 추천 5</a></div>
+      <div class="bt-tag"><a class="bt-search-tag" href="http://localhost:9001/button/2_search_book.jsp?query=%EB%A7%88%ED%8F%AC%EC%A4%91%EC%95%99%EB%8F%84%EC%84%9C%EA%B4%80"> #마포중앙도서관</a></div>
+      <div class="bt-tag"><a class="bt-search-tag" href="http://localhost:9001/button/3_search_performance.jsp?query=%EB%AE%A4%EC%A7%80%EC%97%84+%EC%BD%98%EC%84%9C%ED%8A%B8"> #뮤지엄콘서트</a></div>
+      <div class="bt-tag"><a class="bt-search-tag" href="http://localhost:9001/button/4_search_game.jsp?query=%ED%8D%BC%EB%8B%88%EB%9E%9C%EB%93%9C"> #퍼니랜드</a></div>
       <br>
-      <div class="bt-tag"><a class="bt-search-tag"> #검색어 추천 6</a></div>
-      <div class="bt-tag"><a class="bt-search-tag"> #검색어 추천 7</a></div>
-      <div class="bt-tag"><a class="bt-search-tag"> #검색어 추천 8</a></div>
+      <div class="bt-tag"><a class="bt-search-tag" href="http://localhost:9001/button/5_search_food.jsp?query=%EB%83%89%EB%A9%B4"> #냉면</a></div>
+      <div class="bt-tag"><a class="bt-search-tag" href="http://localhost:9001/button/6_search_trek.jsp?query=%EB%A7%88%ED%8F%AC%EA%B5%AC"> #마포구둘레길</a></div>
+      <div class="bt-tag"><a class="bt-search-tag" href="http://localhost:9001/button/1_search_exercise.jsp?query=%EC%88%98%EC%98%81"> #수영</a></div>
+      
     </div>
   </div>
   <div class="bt-hidden-info">
