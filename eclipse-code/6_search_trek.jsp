@@ -36,7 +36,7 @@
 <%
 try{
 	Class.forName("oracle.jdbc.driver.OracleDriver"); //driver
-    conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "Button", "1234"); //username, password는 개인 Oracle 계정의 것으로 하면 됨
+	conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.0.23:1521:xe", "button", "1234");
 
   
    // 모든 컬럼에서 데이터를 가져오도록 or로 연결함.

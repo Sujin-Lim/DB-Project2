@@ -46,7 +46,7 @@
 <%
 try{
 	Class.forName("oracle.jdbc.driver.OracleDriver"); //driver
-    conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "Button", "1234"); //username, password는 개인 Oracle 계정의 것으로 하면 됨
+	conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.0.23:1521:xe", "button", "1234");
 
   
    // 모든 컬럼에서 데이터를 가져오도록 or로 연결함.
@@ -113,7 +113,7 @@ try{
                         </tr>
                         
                         <% try{ Class.forName("oracle.jdbc.driver.OracleDriver"); //driver
-                          conn=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system" , "1234" );
+                        conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.0.23:1521:xe", "button", "1234");
                           //username, password는 개인 Oracle 계정의 것으로 하면 됨 // 모든 컬럼에서 데이터를 가져오도록 or로 연결함. 
                           String sql="SELECT * FROM performance WHERE 시군구 LIKE ? OR 시설명 LIKE ? OR 소유기관 LIKE ? OR 관리주체 LIKE ? OR 부지면적 LIKE ? OR 건축면적 LIKE ? OR 연면적 LIKE ? OR 바닥재료 LIKE ? OR 좌석수 LIKE ? OR 수용인원 LIKE ? OR 준공연도 LIKE ?"
                           ; pstmt=conn.prepareStatement(sql); for (int i=1; i <=15; i++) { pstmt.setString(i, "%" +
@@ -160,7 +160,7 @@ try{
 <%
 try{
 	Class.forName("oracle.jdbc.driver.OracleDriver"); //driver
-    conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "Button", "1234"); //username, password는 개인 Oracle 계정의 것으로 하면 됨
+	conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.0.23:1521:xe", "button", "1234");
 
   
    // 모든 컬럼에서 데이터를 가져오도록 or로 연결함.
@@ -211,7 +211,7 @@ try{
                           <th>등급</th>
                         </tr>
                         <% try{ Class.forName("oracle.jdbc.driver.OracleDriver"); //driver
-                          conn=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "Button" , "1234" );
+                        conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.0.23:1521:xe", "button", "1234");
                           //username, password는 개인 Oracle 계정의 것으로 하면 됨 // 모든 컬럼에서 데이터를 가져오도록 or로 연결함. 
                           String sql="SELECT * FROM performance WHERE 게임장명 LIKE ? OR 전화번호 LIKE ? OR 지번주소 LIKE ? OR 도로명주소 LIKE ? OR 취급게임 LIKE ? OR 등급 LIKE ?"
                           ; pstmt=conn.prepareStatement(sql); for (int i=1; i <=15; i++) { pstmt.setString(i, "%" +
@@ -253,7 +253,7 @@ try{
                         </tr>
                         
                         <% try{ Class.forName("oracle.jdbc.driver.OracleDriver"); //driver
-                          conn=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "button" , "1234" );
+                        conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.0.23:1521:xe", "button", "1234");
                           //username, password는 개인 Oracle 계정의 것으로 하면 됨 // 모든 컬럼에서 데이터를 가져오도록 or로 연결함. 
                           String sql="SELECT * FROM food WHERE 키 LIKE ? OR 분류1 LIKE ? OR 분류2 LIKE ? OR 분류3 LIKE ? OR 검색어 LIKE ? OR 명칭 LIKE ? OR 행정시 LIKE ? OR 행정구 LIKE ? OR 행정동 LIKE ?"
                           ; pstmt=conn.prepareStatement(sql); for (int i=1; i <=9; i++) { pstmt.setString(i, "%" + query
@@ -303,7 +303,7 @@ try{
 <%
 try{
 	Class.forName("oracle.jdbc.driver.OracleDriver"); //driver
-    conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "Button", "1234"); //username, password는 개인 Oracle 계정의 것으로 하면 됨
+	conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.0.23:1521:xe", "button", "1234");
 
   
    // 모든 컬럼에서 데이터를 가져오도록 or로 연결함.

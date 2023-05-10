@@ -33,7 +33,7 @@
 	
 	try {
 		Class.forName("oracle.jdbc.driver.OracleDriver");
-		conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE", "Button", "1234");
+		conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.0.23:1521:xe", "button", "1234");
 		
 		// SQL 쿼리 실행
 		pstmt = conn.prepareStatement(sql);

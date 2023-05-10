@@ -17,7 +17,7 @@
 
     try {
         Class.forName("oracle.jdbc.driver.OracleDriver");
-        conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE", "Button", "1234");
+        conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.0.23:1521:xe", "button", "1234");
         // SQL 쿼리 작성 및 실행
         String sql = "UPDATE member SET custpw = ?, custname = ?, custphone = ?, custadd = ? WHERE custid = ?";
         pstmt = conn.prepareStatement(sql);
