@@ -17,6 +17,21 @@
 <title>서울 공공 체육시설</title>
 
 <style>
+	    .showstep1E{
+        max-height: 300px;
+        overflow: hidden;
+    }
+    .showstep2E{
+        max-height: 600px;
+        overflow: hidden;
+    }
+    .contentE{
+        height: 100%;
+    }
+    .hideE{
+        display: none;
+    }
+	
   table {
     border: 1px solid black;
     border-collapse: collapse;
@@ -45,7 +60,8 @@
 <body>
 <h2>서울 공공 체육시설</h2>
 
-
+<div class="detailinfoE showstep1E">
+    <div class="contentE">
 <table>
 <tr>
 	<th>시군구</th>
@@ -104,5 +120,13 @@ try{
 }
 %>
 </table>
-</body>
+</div>
+</div>
+
+<a href="#" class="btn_openE">더보기</a>
+<a href="#" class="btn_closeE hideE">감추기</a>
+
+
+    <script src="moree_yj.js"></script>
+	    </body>
 </html>
