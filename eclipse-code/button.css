@@ -273,9 +273,9 @@ input[id="bt-h"]+label span {
 	overflow: hidden;
 	position: relative;
 	width: 1080px;
-	height: 800px;
+	height: 600px;
 	margin: 0 auto;
-	background: orange;
+	background: white;
 	margin-top: 250px;
 	padding-left: 200px;
 	padding-top: 100px;

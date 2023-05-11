@@ -45,22 +45,27 @@
           <tr>
             <td>아이디</td>
             <td><input class="custid" name="custid" type="text"></td>
+            <td><small>&nbsp;&nbsp;영문,숫자만 가능</small></td>
           </tr>
           <tr>
             <td>비밀번호</td>
             <td><input class="custpw" name="custpw" type="password"></td>
+            <td><td>
           </tr>
           <tr>
             <td>이름</td>
             <td><input class="custname" name="custname" type="text"></td>
+            <td><small>&nbsp;&nbsp;한글만 가능</small></td>
           </tr>
           <tr>
             <td>전화번호</td>
             <td><input class="custphone" name="custphone" type="number"></td>
+            <td><small>&nbsp;&nbsp;01~로 시작하는 10~11자리 숫자</small></td>
           </tr>
           <tr>
             <td>주소</td>
             <td><input class="custadd" name="custadd" type="text"></td>
+            <td></td>
           </tr>
           <tr>
           <!-- form 태그 내부에 submit을 눌러야만 insertmember.jsp로 데이터가 전송됨 -->
