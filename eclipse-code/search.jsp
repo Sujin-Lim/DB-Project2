@@ -225,10 +225,10 @@ try{
                         	Class.forName("oracle.jdbc.driver.OracleDriver"); //driver
                         	conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.0.23:1521:xe", "button", "1234");
                           //username, password는 개인 Oracle 계정의 것으로 하면 됨 // 모든 컬럼에서 데이터를 가져오도록 or로 연결함. 
-                          String sql="SELECT * FROM exercise WHERE 시군구 LIKE ? OR 시설명 LIKE ? OR 소유기관 LIKE ? OR 관리주체 LIKE ? OR 부지면적 LIKE ? OR 건축면적 LIKE ? OR 연면적 LIKE ? OR 바닥재료 LIKE ? OR 좌석수 LIKE ? OR 수용인원 LIKE ? OR 준공연도 LIKE ?";
+                          String sql="SELECT * FROM exercise WHERE 시군구 LIKE ? OR 시설명 LIKE ? OR 소유기관 LIKE ? OR 관리주체 LIKE ?  OR 바닥재료 LIKE ? OR 좌석수 LIKE ? OR 수용인원 LIKE ? OR 준공연도 LIKE ?";
                           pstmt=conn.prepareStatement(sql);
                           
-                          for (int i=1; i <=15; i++) { 
+                          for (int i=1; i <=8; i++) { 
                         	  pstmt.setString(i, "%" + query + "%" );
                         	  } 
                           
@@ -339,22 +339,27 @@ try{
                       <table border="1">
                         <tr>
                           <th>게임장명</th>
-                          <th>전화번호</th>
                           <th>지번주소</th>
                           <th>도로명주소</th>
+                          <th>전화번호</th>
                           <th>취급게임</th>
                           <th>등급</th>
                         </tr>
-                        <% try{ Class.forName("oracle.jdbc.driver.OracleDriver"); //driver
+                        <% try
+                        { Class.forName("oracle.jdbc.driver.OracleDriver"); //driver
                         conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.0.23:1521:xe", "button", "1234");
                           //username, password는 개인 Oracle 계정의 것으로 하면 됨 // 모든 컬럼에서 데이터를 가져오도록 or로 연결함. 
-                          String sql="SELECT * FROM game WHERE 게임장명 LIKE ? OR 전화번호 LIKE ? OR 지번주소 LIKE ? OR 도로명주소 LIKE ? OR 취급게임 LIKE ? OR 등급 LIKE ?"
-                          ; pstmt=conn.prepareStatement(sql); for (int i=1; i <=15; i++) { pstmt.setString(i, "%" +
-                          query + "%" ); } rs=pstmt.executeQuery(); while(rs.next()){ //조회되는 로우(행) 반복 out.print("<tr>");
+                          String sql="SELECT * FROM game WHERE 게임장명 LIKE ? OR 지번주소 LIKE ? OR 도로명주소 LIKE ? OR 전화번호 LIKE ? OR 취급게임 LIKE ? OR 등급 LIKE ? ";
+                           pstmt=conn.prepareStatement(sql); 
+                          for (int i=1; i <=6; i++) 
+                          { pstmt.setString(i, "%" +query + "%" ); 
+                          } rs=pstmt.executeQuery(); 
+                          while(rs.next()){
+                          out.print("<tr>");
                           out.print("<td>" + rs.getString("게임장명") + "</td>");
-                          out.print("<td>" + rs.getString("전화번호") + "</td>");
                           out.print("<td>" + rs.getString("지번주소") + "</td>");
                           out.print("<td>" + rs.getString("도로명주소") + "</td>");
+                          out.print("<td>" + rs.getString("전화번호") + "</td>");
                           out.print("<td>" + rs.getString("취급게임") + "</td>");
                           out.print("<td>" + rs.getString("등급") + "</td>");
                           out.print("</tr>");

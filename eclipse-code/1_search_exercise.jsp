@@ -65,7 +65,7 @@ try{
   
    // 모든 컬럼에서 데이터를 가져오도록 or로 연결함.
 
-   String sql = "SELECT * FROM exercise WHERE 시군구 LIKE ? OR 시설명 LIKE ? OR 소유기관 LIKE ? OR 관리주체 LIKE ? OR 바닥재료 LIKE ? OR 좌석수 LIKE ? OR 수용인원 LIKE ? OR 준공연도 LIKE ?";
+   String sql = "SELECT * FROM exercise WHERE 시군구 LIKE ? OR 시설명 LIKE ? OR 소유기관 LIKE ? OR 관리주체 LIKE ? OR 바닥재료 LIKE ? OR 좌석수 LIKE ? OR 수용인원 LIKE ? OR 준공연도 LIKE ? ";
    pstmt = conn.prepareStatement(sql);
    
    for (int i = 1; i <= 8; i++) {

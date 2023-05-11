@@ -74,7 +74,7 @@ table {
     <% 
     try {
         Class.forName("oracle.jdbc.driver.OracleDriver"); //driver
-        conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "button", "1234");
+        conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.0.23:1521:xe", "button", "1234");
 
         // 모든 컬럼에서 데이터를 가져오도록 or로 연결함.
         String sql = "SELECT * FROM performance WHERE 분류 LIKE ? OR 자치구 LIKE ? OR 공연행사명 LIKE ? OR 날짜 LIKE ? OR 장소 LIKE ?";
