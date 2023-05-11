@@ -16,7 +16,23 @@
 <title>공연 리스트</title>
 
 <style>
-  table {
+
+    .showstep1P{
+        max-height: 300px;
+        overflow: hidden;
+    }
+    .showstep2P{
+        max-height: 600px;
+        overflow: hidden;
+    }
+    .contentP{
+        height: 100%;
+    }
+    .hideP{
+        display: none;
+    }
+    
+table {
     border: 1px solid black;
     border-collapse: collapse;
     width:800px;
@@ -24,7 +40,7 @@
   }
   
   th {
-  	border: 1px solid black;
+     border: 1px solid black;
   }
   
   tr {
@@ -41,17 +57,20 @@
 </style>
 
 
-<!-- 더보기란 js파일임. 지우면 작동안할수도 -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-<link rel="stylesheet" href="button.css">
-
 </head>
 <body>
 <h2>공연 리스트</h2>
 
-<div id="js-load" class="main">                      
-    <ul class="menu">
-
+<div class="detailinfoP showstep1P">
+    <div class="contentP">
+<table border="1">
+<tr>
+<th>분류</th>
+<th>자치구</th>
+<th>공연행사명</th>
+<th>날짜</th>
+<th>장소</th>
+</tr>
     <% 
     try {
         Class.forName("oracle.jdbc.driver.OracleDriver"); //driver
@@ -69,45 +88,39 @@
 
         rs = pstmt.executeQuery();
 
-        int count = 0; // (더보기란에 필요) 몇 번째 row인지 계산하기 위한 변수
         while (rs.next()) { // 조회되는 로우(행) 반복
-            if (count % 3 == 0) { // 3번째 row마다 새로운 table 시작
-                if (count != 0) { // 첫 번째 table이 아닐 경우, table 닫기
-                    out.print("</table>");
-                }
-                out.print("<table border='1' align='center' class='lists__item js-load'>");
-                out.print("<tr><th>분류</th><th>자치구</th><th>공연행사명</th><th>날짜</th><th>장소</th></tr>");
-            }
-            out.print("<tr class='tb-load" + count / 3 + "'>");
-            out.print("<td class='tb-1'>" + rs.getString("분류") + "</td>");
-            out.print("<td class='tb-4'>" + rs.getString("자치구") + "</td>");
-            out.print("<td class='tb-2'>" + rs.getString("공연행사명") + "</td>");
-            out.print("<td class='tb-3'>" + rs.getString("날짜") + "</td>");
-            out.print("<td class='tb-5'>" + rs.getString("장소") + "</td>");
+            out.print("<tr>");
+            out.print("<td>" + rs.getString("분류") + "</td>");
+            out.print("<td>" + rs.getString("자치구") + "</td>");
+            out.print("<td>" + rs.getString("공연행사명") + "</td>");
+            out.print("<td>" + rs.getString("날짜") + "</td>");
+            out.print("<td>" + rs.getString("장소") + "</td>");
             out.print("</tr>");
-
-            count++; // count 변수 증가
-        }
-
-        if (count != 0) { // 마지막 table 닫기
-            out.print("</table>");
         }
 
         rs.close();
         pstmt.close();
         conn.close();
-    } catch(Exception e) {
+     }catch(Exception e){
         e.printStackTrace();
-    }
+     }finally{
+        try{
+           if(rs!=null) rs.close();
+           if(pstmt!=null) pstmt.close();
+           if(conn!=null) conn.close();
+        }catch(Exception e){
+           e.printStackTrace();
+        }
+     }
     %>
-    </ul>
-        </div> 
+</table>
+</div>
+</div>
 
-        <div style="padding-top:20px;">
-            <button type="button" id="js-btn-wrap" class="more">더보기</button>
-        </div>
+<a href="#" class="btn_openP">더보기</a>
+<a href="#" class="btn_closeP hideP">감추기</a>
 
-      <script src="moreYJ.js"></script>
+      <script src="morep_yj.js"></script>
 
         </body>
         </html>

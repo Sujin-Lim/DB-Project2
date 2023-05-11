@@ -15,9 +15,56 @@
 <head>
 <meta charset="UTF-8">
 <title>음식점 리스트</title>
+
+
+<style>
+
+    .showstep1F{
+        max-height: 300px;
+        overflow: hidden;
+    }
+    .showstep2F{
+        max-height: 600px;
+        overflow: hidden;
+    }
+    .contentF{
+        height: 100%;
+    }
+    .hideF{
+        display: none;
+    }
+    
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width:800px;
+    border-color: black;
+  }
+  
+  th {
+     border: 1px solid black;
+  }
+  
+  tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-color: black;
+  }
+  
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-color: black;
+  }
+</style>
+
+
 </head>
 <body>
 <h2>음식점 리스트</h2>
+
+<div class="detailinfoF showstep1F">
+    <div class="contentF">
 <table border="1">
 <tr>
 <th>키</th>
@@ -33,7 +80,7 @@
 <%
 try{
 	Class.forName("oracle.jdbc.driver.OracleDriver"); //driver
-	conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "button", "1234");
+	conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.0.23:1521:xe", "button", "1234");
 
   
    // 모든 컬럼에서 데이터를 가져오도록 or로 연결함.
@@ -77,5 +124,13 @@ try{
 }
 %>
 </table>
+</div>
+</div>
+
+<a href="#" class="btn_openF">더보기</a>
+<a href="#" class="btn_closeF hideF">감추기</a>
+
+    <script src="moref_yj.js"></script>
+    
 </body>
 </html>

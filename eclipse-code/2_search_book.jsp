@@ -17,7 +17,23 @@
 <title>서울의 도서관</title>
 
 <style>
-  table {
+
+    .showstep1B{
+        max-height: 300px;
+        overflow: hidden;
+    }
+    .showstep2B{
+        max-height: 600px;
+        overflow: hidden;
+    }
+    .contentB{
+        height: 100%;
+    }
+    .hideB{
+        display: none;
+    }
+     
+table {
     border: 1px solid black;
     border-collapse: collapse;
     width:800px;
@@ -25,7 +41,7 @@
   }
   
   th {
-  	border: 1px solid black;
+     border: 1px solid black;
   }
   
   tr {
@@ -39,11 +55,17 @@
     border-collapse: collapse;
     border-color: black;
   }
+  
 </style>
 
 </head>
+
 <body>
 <h2>서울의 도서관</h2>
+
+
+<div class="detailinfoB showstep1B">
+    <div class="contentB">
 <table border="1">
 <tr>
 <th>도서관명</th>
@@ -58,7 +80,7 @@
 <%
 try{
 	Class.forName("oracle.jdbc.driver.OracleDriver"); //driver
-	conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "button", "1234");
+    conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.0.23:1521:xe", "Button", "1234"); //username, password는 개인 Oracle 계정의 것으로 하면 됨
 
   
    // 모든 컬럼에서 데이터를 가져오도록 or로 연결함.
@@ -102,5 +124,14 @@ try{
 }
 %>
 </table>
+</div>
+</div>
+<a href="#" class="btn_openB">더보기</a>
+<a href="#" class="btn_closeB hideB">감추기</a>
+
+    <script src="moreb_yj.js"></script>
+    
+    
+    
 </body>
 </html>

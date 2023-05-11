@@ -15,9 +15,33 @@
 <head>
 <meta charset="UTF-8">
 <title>게임장 리스트</title>
+
+
+<style>
+
+    .showstep1G{
+        max-height: 300px;
+        overflow: hidden;
+    }
+    .showstep2G{
+        max-height: 600px;
+        overflow: hidden;
+    }
+    .contentG{
+        height: 100%;
+    }
+    .hideG{
+        display: none;
+    }
+</style>
+
+
 </head>
 <body>
 <h2>게임장 리스트</h2>
+
+<div class="detailinfoG showstep1G">
+    <div class="contentG">
 <table border="1">
 <tr>
 <th>게임장명</th>
@@ -30,7 +54,7 @@
 <%
 try{
 	Class.forName("oracle.jdbc.driver.OracleDriver"); //driver
-	conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "button", "1234");
+	conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.0.23:1521:xe", "button", "1234");
 
   
    // 모든 컬럼에서 데이터를 가져오도록 or로 연결함.
@@ -71,5 +95,14 @@ try{
 }
 %>
 </table>
+</div>
+</div>
+
+<a href="#" class="btn_openG">더보기</a>
+<a href="#" class="btn_closeG hideG">감추기</a>
+
+    <script src="moreg_yj.js"></script>
+    
+    
 </body>
 </html>

@@ -15,12 +15,142 @@
               <head>
                 <meta charset="UTF-8">
                 <title>통합검색결과</title>
+                
+                
+                
+                
+<style>
+
+    .showstep1P{
+        max-height: 300px;
+        overflow: hidden;
+    }
+    .showstep2P{
+        max-height: 600px;
+        overflow: hidden;
+    }
+    .contentP{
+        height: 100%;
+    }
+    .hideP{
+        display: none;
+    }
+    
+    
+    .showstep1B{
+        max-height: 300px;
+        overflow: hidden;
+    }
+    .showstep2B{
+        max-height: 600px;
+        overflow: hidden;
+    }
+    .contentB{
+        height: 100%;
+    }
+    .hideB{
+        display: none;
+    }
+    
+    
+    .showstep1F{
+        max-height: 300px;
+        overflow: hidden;
+    }
+    .showstep2F{
+        max-height: 600px;
+        overflow: hidden;
+    }
+    .contentF{
+        height: 100%;
+    }
+    .hideF{
+        display: none;
+    }
+    
+    
+    .showstep1G{
+        max-height: 300px;
+        overflow: hidden;
+    }
+    .showstep2G{
+        max-height: 600px;
+        overflow: hidden;
+    }
+    .contentG{
+        height: 100%;
+    }
+    .hideG{
+        display: none;
+    }
+    
+        .showstep1E{
+        max-height: 300px;
+        overflow: hidden;
+    }
+    .showstep2E{
+        max-height: 600px;
+        overflow: hidden;
+    }
+    .contentE{
+        height: 100%;
+    }
+    .hideE{
+        display: none;
+    }
+    
+    
+    .showstep1T{
+        max-height: 300px;
+        overflow: hidden;
+    }
+    .showstep2T{
+        max-height: 600px;
+        overflow: hidden;
+    }
+    .contentT{
+        height: 100%;
+    }
+    .hideT{
+        display: none;
+    }
+    
+    
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width:800px;
+    border-color: black;
+  }
+  
+  th {
+     border: 1px solid black;
+  }
+  
+  tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-color: black;
+  }
+  
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-color: black;
+  }
+</style>
+
+
               </head>
 
               <body>
                 <div class=s-wrap>
                   <div class="s-performance">
                     <h1>공연 검색 결과</h1>
+                    
+                    
+<div class="detailinfoP showstep1P">
+    <div class="contentP">
                       <table border="1">
 <tr>
 <th>분류</th>
@@ -28,19 +158,6 @@
 <th>공연행사명</th>
 <th>날짜</th>
 <th>장소</th>
-<th>기관명</th>
-<th>이용대상</th>
-<th>이용요금</th>
-<th>출연자정보</th>
-<th>프로그램소개</th>
-<th>기타내용</th>
-<th>홈페이지주소</th>
-<th>대표이미지</th>
-<th>신청일</th>
-<th>시민/기관</th>
-<th>시작일</th>
-<th>종료일</th>
-<th>테마분류</th>
 </tr>
 
 <%
@@ -50,10 +167,10 @@ try{
 
   
    // 모든 컬럼에서 데이터를 가져오도록 or로 연결함.
-   String sql = "SELECT * FROM performance WHERE 분류 LIKE ? OR 자치구 LIKE ? OR 공연행사명 LIKE ? OR 날짜 LIKE ? OR 장소 LIKE ? OR 기관명 LIKE ? OR 이용대상 LIKE ? OR 이용요금 LIKE ? OR 출연자정보 LIKE ? OR 프로그램소개 LIKE ? OR 기타내용 LIKE ? OR 홈페이지주소 LIKE ? OR 대표이미지 LIKE ? OR \"시민/기관\" LIKE ? OR 테마분류 LIKE ?";
+   String sql = "SELECT * FROM performance WHERE 분류 LIKE ? OR 자치구 LIKE ? OR 공연행사명 LIKE ? OR 날짜 LIKE ? OR 장소 LIKE ?";
    pstmt = conn.prepareStatement(sql);
    
-   for (int i = 1; i <= 15; i++) {
+   for (int i = 1; i <= 5; i++) {
        pstmt.setString(i, "%" + query + "%");
    }
 
@@ -67,19 +184,6 @@ try{
 	      out.print("<td>" + rs.getString("공연행사명") + "</td>");
 	      out.print("<td>" + rs.getString("날짜") + "</td>");
 	      out.print("<td>" + rs.getString("장소") + "</td>");
-	      out.print("<td>" + rs.getString("기관명") + "</td>");
-	      out.print("<td>" + rs.getString("이용대상") + "</td>");
-	      out.print("<td>" + rs.getString("이용요금") + "</td>");
-	      out.print("<td>" + rs.getString("출연자정보") + "</td>");
-	      out.print("<td>" + rs.getString("프로그램소개") + "</td>");
-	      out.print("<td>" + rs.getString("기타내용") + "</td>");
-	      out.print("<td>" + rs.getString("홈페이지주소") + "</td>");
-	      out.print("<td>" + rs.getString("대표이미지") + "</td>");
-	      out.print("<td>" + rs.getString("신청일") + "</td>");
-	      out.print("<td>" + rs.getString("시민/기관") + "</td>");
-	      out.print("<td>" + rs.getString("시작일") + "</td>");
-	      out.print("<td>" + rs.getString("종료일") + "</td>");
-	      out.print("<td>" + rs.getString("테마분류") + "</td>");
 	      out.print("</tr>");
    }
    
@@ -91,45 +195,53 @@ try{
 }
 %>
 </table>
+</div>
+</div>
+
+<a href="#" class="btn_openP">더보기</a>
+<a href="#" class="btn_closeP hideP">감추기</a>
+
+      <script src="morep_yj.js"></script>
                     </div>
 
                   </div>
                   <div class="s-exercise">
                     <h1>운동 검색 결과</h1>
                     <div class="s-exercise-result">
-                      <table border="1">
+                    
+                    
+<div class="detailinfoE showstep1E">
+    <div class="contentE">
+                      <table>
                         <tr>
-                          <th>시군구</th>
                           <th>시설명</th>
                           <th>소유기관</th>
-                          <th>관리주체</th>
-                          <th>부지면적</th>
-                          <th>건축면적</th>
-                          <th>연면적</th>
-                          <th>바닥재료</th>
                           <th>좌석수</th>
                           <th>수용인원</th>
                           <th>준공연도</th>
                         </tr>
                         
-                        <% try{ Class.forName("oracle.jdbc.driver.OracleDriver"); //driver
-                        conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.0.23:1521:xe", "button", "1234");
+                        <% try{ 
+                        	Class.forName("oracle.jdbc.driver.OracleDriver"); //driver
+                        	conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.0.23:1521:xe", "button", "1234");
                           //username, password는 개인 Oracle 계정의 것으로 하면 됨 // 모든 컬럼에서 데이터를 가져오도록 or로 연결함. 
-                          String sql="SELECT * FROM performance WHERE 시군구 LIKE ? OR 시설명 LIKE ? OR 소유기관 LIKE ? OR 관리주체 LIKE ? OR 부지면적 LIKE ? OR 건축면적 LIKE ? OR 연면적 LIKE ? OR 바닥재료 LIKE ? OR 좌석수 LIKE ? OR 수용인원 LIKE ? OR 준공연도 LIKE ?"
-                          ; pstmt=conn.prepareStatement(sql); for (int i=1; i <=15; i++) { pstmt.setString(i, "%" +
-                          query + "%" ); } rs=pstmt.executeQuery(); while(rs.next()){ //조회되는 로우(행) 반복 out.print("<tr>");
-                          out.print("<td>" + rs.getString("시군구") + "</td>");
-                          out.print("<td>" + rs.getString("시설명") + "</td>");
-                          out.print("<td>" + rs.getString("소유기관") + "</td>");
-                          out.print("<td>" + rs.getString("관리주체") + "</td>");
-                          out.print("<td>" + rs.getString("부지면적") + "</td>");
-                          out.print("<td>" + rs.getString("건축면적") + "</td>");
-                          out.print("<td>" + rs.getString("연면적") + "</td>");
-                          out.print("<td>" + rs.getString("바닥재료") + "</td>");
-                          out.print("<td>" + rs.getString("좌석수") + "</td>");
-                          out.print("<td>" + rs.getString("수용인원") + "</td>");
-                          out.print("<td>" + rs.getString("준공연도") + "</td>");
-                          out.print("</tr>");
+                          String sql="SELECT * FROM exercise WHERE 시군구 LIKE ? OR 시설명 LIKE ? OR 소유기관 LIKE ? OR 관리주체 LIKE ? OR 부지면적 LIKE ? OR 건축면적 LIKE ? OR 연면적 LIKE ? OR 바닥재료 LIKE ? OR 좌석수 LIKE ? OR 수용인원 LIKE ? OR 준공연도 LIKE ?";
+                          pstmt=conn.prepareStatement(sql);
+                          
+                          for (int i=1; i <=15; i++) { 
+                        	  pstmt.setString(i, "%" + query + "%" );
+                        	  } 
+                          
+                          rs=pstmt.executeQuery(); 
+                          
+                          while(rs.next()){ //조회되는 로우(행) 반복 
+                        	out.print("<tr>");
+                      	    out.print("<td>" + (rs.getString("시설명") == null ? "" : rs.getString("시설명")) + "</td>");
+                    	    out.print("<td>" + (rs.getString("소유기관") == null ? "" : rs.getString("소유기관")) + "</td>");
+                    	    out.print("<td>" + (rs.getString("좌석수") == null ? "" : rs.getString("좌석수")) + "</td>");
+                    	    out.print("<td>" + (rs.getString("수용인원") == null ? "" : rs.getString("수용인원")) + "</td>");
+                    	    out.print("<td>" + (rs.getString("준공연도") == null ? "" : rs.getString("준공연도")) + "</td>");
+                          	out.print("</tr>");
                           }
 
                           rs.close();
@@ -140,11 +252,23 @@ try{
                           }
 %>
 </table>
+</div>
+</div>
+
+<a href="#" class="btn_openE">더보기</a>
+<a href="#" class="btn_closeE hideE">감추기</a>
+
+
+    <script src="moree_yj.js"></script>
+    
                     </div>
                   </div>
                   <div class="s-book">
                     <h1>도서관 검색 결과</h1>
                     <div class="s-book-result">
+                    
+<div class="detailinfoB showstep1B">
+    <div class="contentB">
                       <table border="1">
 <tr>
 <th>도서관명</th>
@@ -196,11 +320,22 @@ try{
 }
 %>
 </table>
+</div>
+</div>
+<a href="#" class="btn_openB">더보기</a>
+<a href="#" class="btn_closeB hideB">감추기</a>
+
+    <script src="moreb_yj.js"></script>
+    
                     </div>
                   </div>
                   <div class="s-game">
                     <h1>게임 검색 결과</h1>
                     <div class="s-game-result">
+                    
+                    
+<div class="detailinfoG showstep1G">
+    <div class="contentG">
                       <table border="1">
                         <tr>
                           <th>게임장명</th>
@@ -213,7 +348,7 @@ try{
                         <% try{ Class.forName("oracle.jdbc.driver.OracleDriver"); //driver
                         conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.0.23:1521:xe", "button", "1234");
                           //username, password는 개인 Oracle 계정의 것으로 하면 됨 // 모든 컬럼에서 데이터를 가져오도록 or로 연결함. 
-                          String sql="SELECT * FROM performance WHERE 게임장명 LIKE ? OR 전화번호 LIKE ? OR 지번주소 LIKE ? OR 도로명주소 LIKE ? OR 취급게임 LIKE ? OR 등급 LIKE ?"
+                          String sql="SELECT * FROM game WHERE 게임장명 LIKE ? OR 전화번호 LIKE ? OR 지번주소 LIKE ? OR 도로명주소 LIKE ? OR 취급게임 LIKE ? OR 등급 LIKE ?"
                           ; pstmt=conn.prepareStatement(sql); for (int i=1; i <=15; i++) { pstmt.setString(i, "%" +
                           query + "%" ); } rs=pstmt.executeQuery(); while(rs.next()){ //조회되는 로우(행) 반복 out.print("<tr>");
                           out.print("<td>" + rs.getString("게임장명") + "</td>");
@@ -234,11 +369,21 @@ try{
 
 %>
 </table>
+</div>
+</div>
+
+<a href="#" class="btn_openG">더보기</a>
+<a href="#" class="btn_closeG hideG">감추기</a>
+
+    <script src="moreg_yj.js"></script>
                     </div>
                   </div>
                   <div class="s-food">
                     <h1>맛집 검색 결과</h1>
                     <div class="s-food-result">
+                    
+<div class="detailinfoF showstep1F">
+    <div class="contentF">
                       <table border="1">
                         <tr>
                           <th>키</th>
@@ -279,11 +424,21 @@ try{
 
 %>
 </table>
+</div>
+</div>
+
+<a href="#" class="btn_openF">더보기</a>
+<a href="#" class="btn_closeF hideF">감추기</a>
+
+    <script src="moref_yj.js"></script>
                     </div>
                   </div>
                   <div class="s-walk">
                     <h1>둘레길 검색 결과</h1>
                     <div class="s-walk-result">
+                    
+                    <div class="detailinfoT showstep1T">
+    <div class="contentT">
                       <table border="1">
 <tr>
 <th>자치구</th>
@@ -352,6 +507,13 @@ try{
 
 %>
 </table>
+</div>
+</div>
+
+<a href="#" class="btn_openT">더보기</a>
+<a href="#" class="btn_closeT hideT">감추기</a>
+
+    <script src="moret_yj.js"></script>
 
                     </div>
                   </div>
