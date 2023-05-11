@@ -27,6 +27,9 @@
     <body class="main-body">
       <div class="header"></div>
       <div class="m-wrap">
+        <div class="f-picture">
+<img src="img/풋터사진.png" alt="그림">
+</div>
         <form action="4_search_game.jsp" method="get">
           <div class="m-search-wr">
             <table class="m-search-t">

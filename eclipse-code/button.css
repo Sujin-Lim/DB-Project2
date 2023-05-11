@@ -435,3 +435,9 @@ tr {
 	align-items: center;
 	height: 550px;
 }
+
+.f-picture {
+	margin-left: 250px;
+}
+
+.f-picture img{width: 600px;}
