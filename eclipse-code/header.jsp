@@ -43,7 +43,7 @@
     </ul>
   </div>
   <div class="bt-hidden-search">
-  <form action="searchsj.jsp" method="get">
+  <form action="search.jsp" method="get">
     <input class="bt-search-bar" type="text" name="query">
     </form>
     <div class="bt-hidden-tag-wrap">
