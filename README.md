@@ -1,6 +1,8 @@
 # DB-Project2
 HTML/CSS/Java/OracleDB(서울시 공공데이터) 를 활용한 웹 페이지 제작
 
+[PPT.pdf](https://github.com/Sujin-Lim/HTML-Project1/files/12140768/b.pdf)
+
 ## 제작후기 - 개인
 
 DB를 활용하기 위해 서울 열린데이터 광장(https://data.seoul.go.kr/) 에서 필요한 데이터 파일(엑셀)을 받아 Oracle DB에 테이블 생성 후 데이터 임포트를 하는 방식으로 하기로 했음.
